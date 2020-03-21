@@ -1,0 +1,13 @@
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu a {
+  margin-left: 40px;
+  opacity: 0.5;
+  font-size: small;
+}
+
+.nav-menu a:hover {
+  opacity: 1;
+}

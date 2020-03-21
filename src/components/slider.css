@@ -1,0 +1,10 @@
+.slider-render .slider {
+  height: 200px !important;
+}
+.slider .slides {
+  background: none !important;
+  height: 200px !important;
+}
+.indicators {
+  display: none !important;
+}

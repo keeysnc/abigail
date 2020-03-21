@@ -28,15 +28,19 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Roboto:900,700,400", "Open Sans"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-intl`,
       options: {
-        // language JSON resource path
         path: `${__dirname}/src/intl`,
-        // supported language
         languages: [`en`, `es`],
-        // language file path
         defaultLanguage: `es`,
-        // option to redirect to `/ko` when connecting `/`
         redirect: true,
       },
     },

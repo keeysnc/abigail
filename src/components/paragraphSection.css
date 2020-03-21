@@ -1,0 +1,9 @@
+.paragraph {
+  width: 80%;
+}
+
+.paragraph .gatsby-image-wrapper {
+  margin: 20px 0px;
+  width: 280px;
+  height: 60px;
+}

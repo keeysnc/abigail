@@ -1,0 +1,34 @@
+header {
+  background: white;
+  margin-bottom: 1.45rem;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.45rem 1.0875rem;
+}
+
+.nav-container a {
+  color: #414042;
+}
+
+.translate {
+  text-align: right;
+}
+
+.translate a {
+  color: #414042;
+}
+
+.translate div a {
+  font-size: medium;
+  margin-right: auto;
+}
+
+.logo {
+  width: 150px;
+}
