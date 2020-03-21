@@ -1,43 +1,43 @@
 import { Link } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Language from "./language"
+import Image from "./image"
+import NavMenu from "./navMenu"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0, display: "inline-block" }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <div
-        style={{
-          float: `right`,
-        }}
-      >
+import "./header.css"
+
+const Header = ({ siteTitle }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <header className="container">
+      <div className="nav-container">
+        <div className="logo">
+          <Link to="/">
+            <Image src={siteTitle} visual={data.logo.childImageSharp.fluid} />
+          </Link>
+        </div>
+        <div className="nav-menu">
+          <NavMenu />
+        </div>
+      </div>
+      <div className="translate">
         <Language />
       </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

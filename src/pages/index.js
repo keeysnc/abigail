@@ -1,33 +1,28 @@
 import React from "react"
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
-import Image from "../components/image"
+import "../../node_modules/materialize-css/dist/css/materialize.min.css"
+import "../../node_modules/materialize-css/dist/js/materialize.min.js"
+
 import SEO from "../components/seo"
+import Hero from "../components/hero"
+import Paragraph from "../components/paragraphSection"
+import SliderRender from "../components/SliderRender"
+import HorizontalRule from "../components/HorizontalRule"
 
 const IndexPage = () => {
   const intl = useIntl()
   return (
     <Layout>
+      <Hero />
       <SEO
         lang={intl.locale}
         title={intl.formatMessage({ id: "title" })}
         keywords={[`gatsby`, `application`, `react`]}
       />
-      <h1>
-        <FormattedMessage id="hello" />
-      </h1>
-      <p>
-        <FormattedMessage id="welcome" />
-      </p>
-      <p>
-        <FormattedMessage id="build" />
-      </p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/page-2/">
-        <FormattedMessage id="go_page2" />
-      </Link>
+      <Paragraph />
+      <HorizontalRule altColor={false} />
+      <SliderRender />
     </Layout>
   )
 }
