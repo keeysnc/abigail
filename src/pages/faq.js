@@ -9,18 +9,6 @@ const Faq = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({ id: "title_page2" })} />
     <Paragraph />
-    <h1>
-      <FormattedMessage id="hello_page2" />
-    </h1>
-    <a
-      href="#"
-      onClick={e => {
-        e.preventDefault()
-        navigate("/")
-      }}
-    >
-      {intl.formatMessage({ id: "go_back" })}
-    </a>
   </Layout>
 )
 

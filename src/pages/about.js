@@ -5,23 +5,25 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Paragraph from "../components/paragraphSection"
 
-const About = ({ intl }) => (
-  <Layout>
-    <SEO lang={intl.locale} title={intl.formatMessage({ id: "title_page2" })} />
-    <Paragraph />
-    <h1>
-      <FormattedMessage id="hello_page2" />
-    </h1>
-    <a
-      href="#"
-      onClick={e => {
-        e.preventDefault()
-        navigate("/")
-      }}
-    >
-      {intl.formatMessage({ id: "go_back" })}
-    </a>
-  </Layout>
-)
+const About = ({ intl }) => {
+  let pagetitle = `About Us`
+  let message = `Abigail’s Driving School was started in 2012 by two Virginia Commonwealth University students. After both received traffic infractions, they had to attend a court mandated driver improvement class. During this class, they noticed Spanish speakers had to get an interpreter, which meant they would pay for the interpreter in addition to the class. 
+The students were inspired to create a driving school which was able to provide classes in Spanish and English at a reasonable price.  As a result, Abigail's Driving School has since become the only English-and-Spanish-language driving school provider in the Richmond Metropolitan area. 
+Not only do we strive to overcome language barriers but also work hard to deliver the highest quality of customer service. We teach individuals defensive driving, regardless of age or experience. This consists of decreasing anxiety through practice, reinforcement and achieving customized goals. 
+Our instructors have successfully passed an in-depth driving/criminal history check, are certified and licensed to teach by the Virginia Department of Motor Vehicles. 
+Abigail’s Driving School is authorized, bonded, insured and certified by the Department of Motor Vehicles of Virginia.
+Vision: To become a household name in Virginia by ensuring each student can drive safely drive out on the streets and the in real world while facing different variable and dangers from their surrounding environment.
+Mission: To provide a learning friendly environment that consists of decreasing anxiety through practice, reinforcement and achieving customized goals.
+`
+  return (
+    <Layout>
+      <SEO
+        lang={intl.locale}
+        title={intl.formatMessage({ id: "title_page2" })}
+      />
+      <Paragraph message={message} pagetitle={pagetitle} />
+    </Layout>
+  )
+}
 
 export default injectIntl(About)

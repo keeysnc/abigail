@@ -5,6 +5,6 @@
   background: none !important;
   height: 200px !important;
 }
-.indicators {
-  display: none !important;
+.slider .indicators .indicator-item.active {
+  background: rgb(80, 227, 194) !important;
 }
