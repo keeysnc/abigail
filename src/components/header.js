@@ -2,13 +2,15 @@ import { Link } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useIntl } from "gatsby-plugin-intl"
 import Language from "./language"
 import Image from "./image"
 import NavMenu from "./navMenu"
 
 import "./header.css"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, props }) => {
+  const intl = useIntl()
   const data = useStaticQuery(graphql`
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
@@ -29,7 +31,26 @@ const Header = ({ siteTitle }) => {
           </Link>
         </div>
         <div className="nav-menu">
-          <NavMenu />
+          <NavMenu
+            home={intl.formatMessage({
+              id: "home.menu_items.home",
+            })}
+            about={intl.formatMessage({
+              id: "home.menu_items.about",
+            })}
+            driversEd={intl.formatMessage({
+              id: "home.menu_items.drivers_ed",
+            })}
+            driversImp={intl.formatMessage({
+              id: "home.menu_items.drivers_imp",
+            })}
+            registration={intl.formatMessage({
+              id: "home.menu_items.registration",
+            })}
+            faq={intl.formatMessage({
+              id: "home.menu_items.faq",
+            })}
+          />
         </div>
       </div>
       <div className="translate">

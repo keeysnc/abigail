@@ -1,4 +1,5 @@
-.slider-render .slider {
+.slider {
+  max-height: 250px !important;
 }
 .slider .slides {
   background: none !important;
