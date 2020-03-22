@@ -3,16 +3,15 @@ import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Paragraph from "../components/paragraphSection"
 
-const SecondPage = ({ intl }) => (
+const Faq = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({ id: "title_page2" })} />
+    <Paragraph />
     <h1>
       <FormattedMessage id="hello_page2" />
     </h1>
-    <p>
-      <FormattedMessage id="welcome_page2" />
-    </p>
     <a
       href="#"
       onClick={e => {
@@ -25,4 +24,4 @@ const SecondPage = ({ intl }) => (
   </Layout>
 )
 
-export default injectIntl(SecondPage)
+export default injectIntl(Faq)

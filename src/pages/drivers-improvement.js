@@ -3,13 +3,12 @@ import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import CardRender from "../components/CardRender"
 
-const SecondPage = ({ intl }) => (
+const DriversImprovement = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({ id: "title_page2" })} />
-    <h1>
-      <FormattedMessage id="hello_page2" />
-    </h1>
+    <CardRender pagetitle={"Drivers Improvement"} />
     <p>
       <FormattedMessage id="welcome_page2" />
     </p>
@@ -25,4 +24,4 @@ const SecondPage = ({ intl }) => (
   </Layout>
 )
 
-export default injectIntl(SecondPage)
+export default injectIntl(DriversImprovement)

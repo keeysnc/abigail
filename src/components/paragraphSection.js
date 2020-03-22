@@ -56,7 +56,7 @@ const Paragraph = props => {
         <br />
         <Image
           visual={
-            homePath === "/en" || "/es"
+            homePath === "/en/" || "/es/"
               ? data.accreditedLogo.childImageSharp.fixed
               : " "
           }
