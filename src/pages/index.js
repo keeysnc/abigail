@@ -12,20 +12,20 @@ import HorizontalRule from "../components/HorizontalRule"
 
 const IndexPage = () => {
   const intl = useIntl()
-  let pagetitle = `Our Mission`
-  let message = `Vision: To become a household name in Virginia by ensuring each student can drive safely drive out on the streets and the in real world while facing different variable and dangers from their surrounding environment.
-  Mission: To provide a learning friendly environment that consists of decreasing anxiety through practice, reinforcement and achieving customized goals.`
 
   return (
     <Layout>
-      <Hero />
+      <Hero herotitle={intl.formatMessage({ id: "home.herotitle" })} />
       <HorizontalRule altColor={false} />
       <SEO
         lang={intl.locale}
-        title={intl.formatMessage({ id: "title" })}
+        title={intl.formatMessage({ id: "home.title" })}
         keywords={[`gatsby`, `application`, `react`]}
       />
-      <Paragraph message={message} pagetitle={pagetitle} />
+      <Paragraph
+        message={intl.formatMessage({ id: "home.mission" })}
+        pagetitle={intl.formatMessage({ id: "home.pagetitle" })}
+      />
       <HorizontalRule altColor={false} />
       <SliderRender />
     </Layout>

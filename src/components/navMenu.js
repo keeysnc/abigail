@@ -4,14 +4,14 @@ import React from "react"
 
 import "./navMenu.css"
 
-const NavMenu = () => (
+const NavMenu = props => (
   <div className="nav-menu">
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/drivers-education">Drivers Education</Link>
-    <Link to="/drivers-improvement">Drivers Improvement</Link>
-    <Link to="/registration">Registration</Link>
-    <Link to="/faq">FAQ</Link>
+    <Link to="/">{props.home}</Link>
+    <Link to="/about">{props.about}</Link>
+    <Link to="/drivers-education">{props.driversEd}</Link>
+    <Link to="/drivers-improvement">{props.driversImp}</Link>
+    <Link to="/registration">{props.registration}</Link>
+    <Link to="/faq">{props.faq}</Link>
   </div>
 )
 

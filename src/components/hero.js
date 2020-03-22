@@ -6,7 +6,7 @@ import BackgroundImage from "gatsby-background-image"
 
 import "./hero.css"
 
-const Hero = () => {
+const Hero = props => {
   const data = useStaticQuery(graphql`
     query {
       hero: file(relativePath: { eq: "hero.png" }) {
@@ -27,10 +27,7 @@ const Hero = () => {
       >
         <div className="hero-content">
           <h4>Abigail's Driving School</h4>
-          <p>
-            The only English and Spanish language driving school provider in the
-            Richmond Metropolitan area
-          </p>
+          <p>{props.herotitle}</p>
         </div>
       </BackgroundImage>
     </div>

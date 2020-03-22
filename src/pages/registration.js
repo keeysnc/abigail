@@ -1,5 +1,5 @@
 import React from "react"
-import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,14 +8,16 @@ import CardRender from "../components/CardRender"
 import HorizontalRule from "../components/HorizontalRule"
 
 const Registration = ({ intl }) => {
-  let message = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ips`
   return (
     <Layout>
-      <CardRender message={message} pagetitle={"Register Today!"} />
+      <CardRender
+        pagetitle={intl.formatMessage({ id: "registration.pagetitle" })}
+        message={intl.formatMessage({ id: "registration.message" })}
+      />
       <HorizontalRule />
       <SEO
         lang={intl.locale}
-        title={intl.formatMessage({ id: "title_page2" })}
+        title={intl.formatMessage({ id: "registration.title" })}
       />
       <FormRender />
     </Layout>
