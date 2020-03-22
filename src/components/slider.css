@@ -1,10 +1,12 @@
 .slider-render .slider {
-  height: 200px !important;
 }
 .slider .slides {
   background: none !important;
-  height: 200px !important;
 }
 .slider .indicators .indicator-item.active {
   background: rgb(80, 227, 194) !important;
+}
+
+.slider .indicators {
+  text-align: left !important;
 }

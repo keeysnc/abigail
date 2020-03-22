@@ -34,7 +34,7 @@ const CardRender = props => {
             horizontal
             revealIcon={<Icon>more_vert</Icon>}
           >
-            <h2>{props.pagetitle}</h2>
+            <h3>{props.pagetitle}</h3>
             <p>{props.message}</p>
           </Card>
         </Col>
