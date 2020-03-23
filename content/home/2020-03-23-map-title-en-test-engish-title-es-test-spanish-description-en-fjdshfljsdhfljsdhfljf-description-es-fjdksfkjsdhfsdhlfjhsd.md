@@ -1,6 +1,6 @@
 ---
 title-en: Test Engish
 title-es: Test Spanish
-description-en: fjdshfljsdhfljsdhfljf
-description-es: fjdksfkjsdhfsdhlfjhsd
+description-en: This is a english test
+description-es: This is a spanish test
 ---
