@@ -1,14 +1,15 @@
 import React from "react"
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
-import "../../node_modules/materialize-css/dist/css/materialize.min.css"
-import "../../node_modules/materialize-css/dist/js/materialize.min.js"
+import "react-materialize"
 
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
 import SliderRender from "../components/SliderRender"
 import HorizontalRule from "../components/HorizontalRule"
+import "../../node_modules/materialize-css/dist/css/materialize.min.css"
+import "../../node_modules/materialize-css/dist/js/materialize.min.js"
 
 const IndexPage = () => {
   const intl = useIntl()

@@ -13,18 +13,6 @@ const Training = ({ intl }) => (
     <CardRender pagetitle={"Online Training"} />
     <HorizontalRule />
     <CourseInfo />
-    {/* <p>
-      <FormattedMessage id="welcome_page2" />
-    </p>
-    <a
-      href="#"
-      onClick={e => {
-        e.preventDefault()
-        navigate("/")
-      }}
-    >
-      {intl.formatMessage({ id: "go_back" })}
-    </a> */}
   </Layout>
 )
 

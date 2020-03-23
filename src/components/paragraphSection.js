@@ -6,7 +6,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./paragraphSection.css"
 
 const Paragraph = props => {
-  let homePath = window.location.pathname
   const data = useStaticQuery(graphql`
     query {
       accreditedLogo: file(relativePath: { eq: "accredited-biz-logo.png" }) {
@@ -24,13 +23,7 @@ const Paragraph = props => {
       <p>
         {props.message}
         <br />
-        <Image
-          visual={
-            homePath === "/en/" || "/es/"
-              ? data.accreditedLogo.childImageSharp.fixed
-              : " "
-          }
-        />
+        <Image visual={data.accreditedLogo.childImageSharp.fixed} />
       </p>
     </div>
   )

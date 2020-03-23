@@ -3,7 +3,6 @@ import { Card, CardTitle, Icon, Col, Row } from "react-materialize"
 import { useStaticQuery, graphql } from "gatsby"
 
 const CardRender = props => {
-  let pagePath = window.location.pathname
   const data = useStaticQuery(graphql`
     query {
       driversEd: file(relativePath: { eq: "drivers-ed.png" }) {
@@ -22,14 +21,7 @@ const CardRender = props => {
           <Card
             closeIcon={<Icon>close</Icon>}
             header={
-              <CardTitle
-                image={
-                  pagePath === "/en/drivers-education/" ||
-                  "/es/drivers-education/"
-                    ? data.driversEd.childImageSharp.fluid.src
-                    : " "
-                }
-              />
+              <CardTitle image={data.driversEd.childImageSharp.fluid.src} />
             }
             horizontal
             revealIcon={<Icon>more_vert</Icon>}
