@@ -3,7 +3,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import FormRender from "../components/form"
+import Form from "../components/form"
 import CardRender from "../components/CardRender"
 import HorizontalRule from "../components/HorizontalRule"
 
@@ -19,7 +19,7 @@ const Registration = ({ intl }) => {
         lang={intl.locale}
         title={intl.formatMessage({ id: "registration.title" })}
       />
-      <FormRender />
+      <Form />
     </Layout>
   )
 }
