@@ -12,6 +12,8 @@ class FormRender extends React.Component {
     this.state = { name: "", email: "", message: "" }
   }
 
+  /* Here’s the juicy bit for posting the form submission */
+
   handleSubmit = e => {
     fetch("/", {
       method: "POST",
@@ -25,49 +27,47 @@ class FormRender extends React.Component {
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
+
   render() {
     const { name, email, message } = this.state
     return (
-      <div className="section">
-        <h1>Registration</h1>
-        <form onSubmit={this.handleSubmit}>
-          <p>
-            <label>
-              Your Name:{" "}
-              <input
-                type="text"
-                name="name"
-                value={name}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email:{" "}
-              <input
-                type="email"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:{" "}
-              <textarea
-                name="message"
-                value={message}
-                onChange={this.handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
+      <form onSubmit={this.handleSubmit}>
+        <p>
+          <label>
+            Your Name:{" "}
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email:{" "}
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:{" "}
+            <textarea
+              name="message"
+              value={message}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     )
   }
 }
