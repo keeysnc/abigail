@@ -17,21 +17,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/markdown-pages`,
-        name: `markdown-pages`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
         url: `https://your-identity-instance-here.netlify.com/`, // required!
