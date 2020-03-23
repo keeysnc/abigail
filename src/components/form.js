@@ -14,6 +14,7 @@ export default () => (
       <label htmlFor="name">Name</label>
       <input type="text" name="name" id="name" />
     </div>
+
     <div>
       <label htmlFor="email">Email</label>
       <input type="text" name="email" id="email" />
