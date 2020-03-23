@@ -3,7 +3,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Form from "../components/form"
+import Form from "../components/Form"
 import CardRender from "../components/CardRender"
 import HorizontalRule from "../components/HorizontalRule"
 
