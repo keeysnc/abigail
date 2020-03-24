@@ -14,8 +14,7 @@ const IndexPage = () => {
   const intl = useIntl()
   const data = useStaticQuery(graphql`
     query {
-      home: markdownRemark {
-        fileAbsolutePath
+      home: markdownRemark(fileAbsolutePath: { regex: "/home/" }) {
         frontmatter {
           description_en
           title_en

@@ -9,8 +9,7 @@ import Paragraph from "../components/paragraphSection"
 const About = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      about: markdownRemark {
-        fileAbsolutePath
+      about: markdownRemark(fileAbsolutePath: { regex: "/about/" }) {
         frontmatter {
           description_en
           title_en
