@@ -16,7 +16,6 @@ const About = ({ intl }) => {
           description_en
           description_es
         }
-        fileAbsolutePath
       }
     }
   `)
