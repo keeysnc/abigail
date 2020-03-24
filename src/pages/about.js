@@ -7,16 +7,16 @@ import SEO from "../components/seo"
 import Paragraph from "../components/paragraphSection"
 
 const About = ({ intl }) => {
-  const dataAbout = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      about: markdownRemark(
-        id: { eq: "f6fcb3c5-3786-550a-8ead-653706d9165f" }
-      ) {
+      about: markdownRemark {
+        fileAbsolutePath
         frontmatter {
           description_en
+          title_en
+          title_es
           description_es
         }
-        fileAbsolutePath
         id
       }
     }
@@ -28,8 +28,8 @@ const About = ({ intl }) => {
         title={intl.formatMessage({ id: "title_page2" })}
       />
       <Paragraph
-        message_es={dataAbout.about.frontmatter.description_es}
-        message_en={dataAbout.about.frontmatter.description_en}
+        message_es={data.about.frontmatter.description_es}
+        message_en={data.about.frontmatter.description_en}
         title={intl.formatMessage({ id: "about.pagetitle" })}
       />
     </Layout>
