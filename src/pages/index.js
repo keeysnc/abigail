@@ -8,10 +8,24 @@ import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
 import SliderRender from "../components/SliderRender"
 import HorizontalRule from "../components/HorizontalRule"
+import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {
   const intl = useIntl()
-
+  const data = useStaticQuery(graphql`
+    query {
+      home: markdownRemark {
+        fileAbsolutePath
+        frontmatter {
+          description_en
+          title_en
+          title_es
+          description_es
+        }
+        id
+      }
+    }
+  `)
   return (
     <Layout>
       <Hero herotitle={intl.formatMessage({ id: "home.herotitle" })} />
@@ -22,8 +36,10 @@ const IndexPage = () => {
         keywords={[`gatsby`, `application`, `react`]}
       />
       <Paragraph
-        message={intl.formatMessage({ id: "home.mission" })}
-        pagetitle={intl.formatMessage({ id: "home.pagetitle" })}
+        title_en={data.home.frontmatter.title_en}
+        message_en={data.home.frontmatter.description_en}
+        title_es={data.home.frontmatter.title_es}
+        message_es={data.home.frontmatter.description_es}
       />
       <HorizontalRule altColor={false} />
       {/* <SliderRender /> */}

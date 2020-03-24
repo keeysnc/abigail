@@ -19,9 +19,13 @@ const Paragraph = props => {
   `)
   return (
     <div className="paragraph section">
-      <h1>{props.pagetitle}</h1>
+      <h1>
+        {props.title_en}
+        {props.title_es}
+      </h1>
       <p>
-        {props.message}
+        {props.message_en}
+        {props.message_es}
         <br />
         <Image visual={data.accreditedLogo.childImageSharp.fixed} />
       </p>

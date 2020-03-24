@@ -27,8 +27,6 @@ const Layout = ({ children, intl }) => {
       identity.user.user_metadata &&
       identity.user.user_metadata.name) ||
     "NoName"
-
-  console.log(JSON.stringify(identity))
   const isLoggedIn = identity && identity.isLoggedIn
 
   const data = useStaticQuery(graphql`
