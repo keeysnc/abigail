@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: "Home"
+    label: "Home"
+    folder: "content/home"
+    create: false
+    default: 1
+    delete: false
+    max: 1
+    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "description-en",
+          max: 1,
+          name: "description-en",
+          widget: "markdown",
+        }
+      - {
+          label: "description-es",
+          max: 1,
+          name: "description-es",
+          widget: "markdown",
+        }
+  - name: "About"
+    label: "About"
+    folder: "content/about"
+    default: 1
+    max: 1
+    delete: false
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "description-en", name: "description-en", widget: "markdown" }
+      - { label: "description-es", name: "description-es", widget: "markdown" }
+  - name: "Drivers Education"
+    label: "Drivers Education"
+    folder: "content/drivers-education"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "description-en", name: "description-en", widget: "markdown" }
+      - { label: "description-es", name: "description-es", widget: "markdown" }
+  - name: "Course"
+    label: "Course"
+    folder: "content/courses"
+    create: false
+    delete: false
+    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "title-en", name: "title-en", widget: "string" }
+      - { label: "title-es", name: "title-es", widget: "string" }
+      - { label: "description-en", name: "description-en", widget: "markdown" }
+      - { label: "description-es", name: "description-es", widget: "markdown" }
+      - { label: "price-en", name: "price-en", widget: "string" }
+      - { label: "price-es", name: "price-es", widget: "string" }
+      - { label: "price-en", name: "price-en", widget: "string" }
+      - {
+          label: "requirements-en",
+          name: "requirements-en",
+          widget: "markdown",
+        }
+      - {
+          label: "requirements-es",
+          name: "requirements-es",
+          widget: "markdown",
+        }
+      - { label: "regulations-en", name: "regulations-en", widget: "markdown" }
+      - { label: "regulations-es", name: "regulations-es", widget: "markdown" }
