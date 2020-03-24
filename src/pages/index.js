@@ -2,13 +2,13 @@ import React from "react"
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import "react-materialize"
+import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
 import SliderRender from "../components/SliderRender"
 import HorizontalRule from "../components/HorizontalRule"
-import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {
   const intl = useIntl()
@@ -36,9 +36,8 @@ const IndexPage = () => {
         keywords={[`gatsby`, `application`, `react`]}
       />
       <Paragraph
-        title_en={data.home.frontmatter.title_en}
+        title={intl.formatMessage({ id: "home.pagetitle" })}
         message_en={data.home.frontmatter.description_en}
-        title_es={data.home.frontmatter.title_es}
         message_es={data.home.frontmatter.description_es}
       />
       <HorizontalRule altColor={false} />

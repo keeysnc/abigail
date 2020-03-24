@@ -19,10 +19,7 @@ const Paragraph = props => {
   `)
   return (
     <div className="paragraph section">
-      <h1>
-        {props.title_en}
-        {props.title_es}
-      </h1>
+      <h1>{props.title}</h1>
       <p>
         {props.message_en}
         {props.message_es}
