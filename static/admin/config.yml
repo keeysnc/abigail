@@ -52,8 +52,8 @@ collections:
     fields:
       - { label: "description-en", name: "description-en", widget: "markdown" }
       - { label: "description-es", name: "description-es", widget: "markdown" }
-  - name: "Course"
-    label: "Course"
+  - name: "Courses"
+    label: "Courses"
     folder: "content/courses"
     create: true
     delete: false
@@ -67,7 +67,6 @@ collections:
       - { label: "description-es", name: "description-es", widget: "markdown" }
       - { label: "price-en", name: "price-en", widget: "string" }
       - { label: "price-es", name: "price-es", widget: "string" }
-      - { label: "price-en", name: "price-en", widget: "string" }
       - {
           label: "requirements-en",
           name: "requirements-en",
