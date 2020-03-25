@@ -76,26 +76,29 @@ collections:
           widget: "markdown",
           class: "es",
         }
-  - name: "Courses"
-    label: "Courses"
-    folder: "content/courses"
-    default: 1
-    delete: true
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
-    editor:
-      preview: false
+  - label: "Blog in English"
+    name: "english_posts"
+    folder: "_posts"
+    filter: { field: "language", value: "en" }
     fields:
       - {
-          label: "Title",
-          name: "title",
-          widget: "string",
-          hint: "title of node",
+          label: "Language",
+          name: "language",
+          widget: "select",
+          options: ["en", "es"],
         }
-      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+  - label: "Blog en Español"
+    name: "spanish_posts"
+    folder: "_posts"
+    filter: { field: "language", value: "es" }
+    fields:
       - {
-          label: "description-es",
-          name: "body",
-          widget: "markdown",
-          class: "es",
+          label: "Lenguaje",
+          name: "language",
+          widget: "select",
+          options: ["en", "es"],
         }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
