@@ -1,9 +1,8 @@
 import React from "react"
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
-import "react-materialize"
 import { useStaticQuery, graphql } from "gatsby"
-
+import "materialize-css/dist/css/materialize.min.css"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
