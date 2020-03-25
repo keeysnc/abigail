@@ -24,7 +24,12 @@ collections:
           hint: "title of node",
         }
       - { label: "description-en", name: "body", widget: "markdown" }
-      - { label: "description-es", name: "body", widget: "markdown" }
+      - {
+          label: "description-es",
+          name: "body",
+          widget: "markdown",
+          class: "es",
+        }
   - name: "About"
     label: "About"
     folder: "content/about"
@@ -42,7 +47,12 @@ collections:
           hint: "title of node",
         }
       - { label: "description-en", name: "body", widget: "markdown" }
-      - { label: "description-es", name: "body", widget: "markdown" }
+      - {
+          label: "description-es",
+          name: "body",
+          widget: "markdown",
+          class: "es",
+        }
   - name: "Drivers Education"
     label: "Drivers Education"
     folder: "content/drivers-education"
@@ -60,7 +70,12 @@ collections:
           hint: "title of node",
         }
       - { label: "description-en", name: "body", widget: "markdown" }
-      - { label: "description-es", name: "body", widget: "markdown" }
+      - {
+          label: "description-es",
+          name: "body",
+          widget: "markdown",
+          class: "es",
+        }
   - name: "Courses"
     label: "Courses"
     folder: "content/courses"
@@ -78,4 +93,9 @@ collections:
           hint: "title of node",
         }
       - { label: "description-en", name: "body", widget: "markdown" }
-      - { label: "description-es", name: "body", widget: "markdown" }
+      - {
+          label: "description-es",
+          name: "body",
+          widget: "markdown",
+          class: "es",
+        }
