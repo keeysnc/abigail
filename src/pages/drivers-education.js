@@ -31,14 +31,6 @@ const DriversEd = ({ intl }) => {
         message={intl.formatMessage({ id: "drivers_education.message" })}
       />
       <HorizontalRule />
-      {/* <Accordion>
-        <div label="{data.courses.frontmatter.title}">
-          <CourseInfo
-            message_en={data.courses.html}
-            message_es={data.courses.html}
-          />
-        </div>
-      </Accordion> */}
       <Accordion>
         <div label={data.courses.frontmatter.title}>
           <CourseInfo
