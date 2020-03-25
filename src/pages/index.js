@@ -16,12 +16,10 @@ const IndexPage = () => {
     query {
       home: markdownRemark(fileAbsolutePath: { regex: "/home/" }) {
         frontmatter {
-          description_en
-          title_en
-          title_es
-          description_es
+          title
         }
         id
+        html
       }
     }
   `)
@@ -36,8 +34,8 @@ const IndexPage = () => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "home.pagetitle" })}
-        message_en={data.home.frontmatter.description_en}
-        message_es={data.home.frontmatter.description_es}
+        message_en={data.home.html}
+        message_es={data.home.html}
       />
       <HorizontalRule altColor={false} />
       {/* <SliderRender /> */}

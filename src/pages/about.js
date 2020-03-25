@@ -11,12 +11,10 @@ const About = ({ intl }) => {
     query {
       about: markdownRemark(fileAbsolutePath: { regex: "/about/" }) {
         frontmatter {
-          description_en
-          title_en
-          title_es
-          description_es
+          title
         }
         id
+        html
       }
     }
   `)
@@ -24,12 +22,12 @@ const About = ({ intl }) => {
     <Layout>
       <SEO
         lang={intl.locale}
-        title={intl.formatMessage({ id: "title_page2" })}
+        title={intl.formatMessage({ id: "about.pagetitle" })}
       />
       <Paragraph
-        message_es={data.about.frontmatter.description_es}
-        message_en={data.about.frontmatter.description_en}
         title={intl.formatMessage({ id: "about.pagetitle" })}
+        message_en={data.about.html}
+        message_es={data.about.html}
       />
     </Layout>
   )

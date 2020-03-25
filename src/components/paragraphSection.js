@@ -20,12 +20,10 @@ const Paragraph = props => {
   return (
     <div className="paragraph section">
       <h1>{props.title}</h1>
-      <p>
-        {props.message_en}
-        {props.message_es}
-        <br />
-        <Image visual={data.accreditedLogo.childImageSharp.fixed} />
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: props.message_en }} />
+      <div dangerouslySetInnerHTML={{ __html: props.message_es }} />
+      <br />
+      <Image visual={data.accreditedLogo.childImageSharp.fixed} />
     </div>
   )
 }

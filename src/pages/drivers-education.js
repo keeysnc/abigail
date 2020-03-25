@@ -1,6 +1,6 @@
 import React from "react"
 import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
-
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CardRender from "../components/CardRender"
@@ -9,6 +9,17 @@ import HorizontalRule from "../components/HorizontalRule"
 import Accordion from "../components/Accordion"
 
 const DriversEd = ({ intl }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      courses: markdownRemark(fileAbsolutePath: { regex: "/courses/" }) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
+    }
+  `)
   return (
     <Layout>
       <SEO
@@ -21,124 +32,10 @@ const DriversEd = ({ intl }) => {
       />
       <HorizontalRule />
       <Accordion>
-        <div label="Alligator Mississippiensis">
+        <div label="test">
           <CourseInfo
-            courseName={intl.formatMessage({
-              id: "drivers_education.course.title",
-            })}
-            description={intl.formatMessage({
-              id: "drivers_education.course.description",
-            })}
-            price={intl.formatMessage({ id: "drivers_education.course.price" })}
-            topics={intl.formatMessage({
-              id: "drivers_education.course.topics",
-            })}
-            regulations={intl.formatMessage({
-              id: "drivers_education.course.regulations",
-            })}
-            requirements={intl.formatMessage({
-              id: "drivers_education.course.requirements",
-            })}
-          />
-        </div>
-        <div label="Alligator Sinensis">
-          <CourseInfo
-            courseName={intl.formatMessage({
-              id: "drivers_education.course.title",
-            })}
-            description={intl.formatMessage({
-              id: "drivers_education.course.description",
-            })}
-            price={intl.formatMessage({ id: "drivers_education.course.price" })}
-            topics={intl.formatMessage({
-              id: "drivers_education.course.topics",
-            })}
-            regulations={intl.formatMessage({
-              id: "drivers_education.course.regulations",
-            })}
-            requirements={intl.formatMessage({
-              id: "drivers_education.course.requirements",
-            })}
-          />
-        </div>
-        <div label="Alligator Sinensis">
-          <CourseInfo
-            courseName={intl.formatMessage({
-              id: "drivers_education.course.title",
-            })}
-            description={intl.formatMessage({
-              id: "drivers_education.course.description",
-            })}
-            price={intl.formatMessage({ id: "drivers_education.course.price" })}
-            topics={intl.formatMessage({
-              id: "drivers_education.course.topics",
-            })}
-            regulations={intl.formatMessage({
-              id: "drivers_education.course.regulations",
-            })}
-            requirements={intl.formatMessage({
-              id: "drivers_education.course.requirements",
-            })}
-          />
-        </div>
-        <div label="Alligator Sinensis">
-          <CourseInfo
-            courseName={intl.formatMessage({
-              id: "drivers_education.course.title",
-            })}
-            description={intl.formatMessage({
-              id: "drivers_education.course.description",
-            })}
-            price={intl.formatMessage({ id: "drivers_education.course.price" })}
-            topics={intl.formatMessage({
-              id: "drivers_education.course.topics",
-            })}
-            regulations={intl.formatMessage({
-              id: "drivers_education.course.regulations",
-            })}
-            requirements={intl.formatMessage({
-              id: "drivers_education.course.requirements",
-            })}
-          />
-        </div>
-        <div label="Alligator Sinensis">
-          <CourseInfo
-            courseName={intl.formatMessage({
-              id: "drivers_education.course.title",
-            })}
-            description={intl.formatMessage({
-              id: "drivers_education.course.description",
-            })}
-            price={intl.formatMessage({ id: "drivers_education.course.price" })}
-            topics={intl.formatMessage({
-              id: "drivers_education.course.topics",
-            })}
-            regulations={intl.formatMessage({
-              id: "drivers_education.course.regulations",
-            })}
-            requirements={intl.formatMessage({
-              id: "drivers_education.course.requirements",
-            })}
-          />
-        </div>
-        <div label="Alligator Sinensis">
-          <CourseInfo
-            courseName={intl.formatMessage({
-              id: "drivers_education.course.title",
-            })}
-            description={intl.formatMessage({
-              id: "drivers_education.course.description",
-            })}
-            price={intl.formatMessage({ id: "drivers_education.course.price" })}
-            topics={intl.formatMessage({
-              id: "drivers_education.course.topics",
-            })}
-            regulations={intl.formatMessage({
-              id: "drivers_education.course.regulations",
-            })}
-            requirements={intl.formatMessage({
-              id: "drivers_education.course.requirements",
-            })}
+            message_en={data.courses.html}
+            message_es={data.courses.html}
           />
         </div>
       </Accordion>

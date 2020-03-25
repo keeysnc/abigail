@@ -40,6 +40,13 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/drivers-education`,
+        name: `markdown-pages`,
+      },
+    },
     "gatsby-transformer-remark",
     `gatsby-plugin-react-helmet`,
     {

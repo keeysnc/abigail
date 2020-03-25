@@ -11,9 +11,9 @@ collections:
     folder: "content/home"
     create: true
     default: 1
-    delete: false
+    delete: true
     max: 1
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: false
     fields:
@@ -31,7 +31,43 @@ collections:
     default: 1
     delete: true
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "description-es", name: "body", widget: "markdown" }
+  - name: "Drivers Education"
+    label: "Drivers Education"
+    folder: "content/drivers-education"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "description-es", name: "body", widget: "markdown" }
+  - name: "Courses"
+    label: "Courses"
+    folder: "content/courses"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: false
     fields:
