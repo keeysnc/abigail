@@ -1,7 +1,7 @@
 ---
 title: Classroom Sessions
 ---
-SPANISH - Virginia requires students younger than 18 years of age who are home schooled or have not taken the course in high school to complete 36 - fifty-minute classroom course instruction before taking the behind the wheel class. Driver education classes are held on Monday - Saturdays (between 4pm-6pm) with flexible hours to accommodate parents/guardians. The class lasts 4-5 weeks depending on the student's school/extracurricular activities schedule.
+Virginia requires students younger than 18 years of age who are home schooled or have not taken the course in high school to complete 36 - fifty-minute classroom course instruction before taking the behind the wheel class. Driver education classes are held on Monday - Saturdays (between 4pm-6pm) with flexible hours to accommodate parents/guardians. The class lasts 4-5 weeks depending on the student's school/extracurricular activities schedule.
 
 **Topics:**
 
