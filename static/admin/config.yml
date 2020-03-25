@@ -78,7 +78,7 @@ collections:
         }
   - label: "Blog in English"
     name: "english_posts"
-    folder: "_posts"
+    folder: "content/courses"
     filter: { field: "language", value: "en" }
     fields:
       - {
@@ -91,7 +91,7 @@ collections:
       - { label: "Content", name: "body", widget: "markdown" }
   - label: "Blog en Español"
     name: "spanish_posts"
-    folder: "_posts"
+    folder: "content/courses"
     filter: { field: "language", value: "es" }
     fields:
       - {
