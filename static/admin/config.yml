@@ -13,69 +13,33 @@ collections:
     default: 1
     delete: false
     max: 1
-    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
       - {
-          label: "description-en",
-          max: 1,
-          name: "description-en",
-          widget: "markdown",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
         }
-      - {
-          label: "description-es",
-          max: 1,
-          name: "description-es",
-          widget: "markdown",
-        }
+      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "description-es", name: "body", widget: "markdown" }
   - name: "About"
     label: "About"
     folder: "content/about"
     default: 1
-    max: 1
     delete: true
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: "description-en", name: "description-en", widget: "markdown" }
-      - { label: "description-es", name: "description-es", widget: "markdown" }
-  - name: "Drivers Education"
-    label: "Drivers Education"
-    folder: "content/drivers-education"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
-    editor:
-      preview: true
-    fields:
-      - { label: "description-en", name: "description-en", widget: "markdown" }
-      - { label: "description-es", name: "description-es", widget: "markdown" }
-  - name: "Courses"
-    label: "Courses"
-    folder: "content/courses"
-    create: true
-    delete: false
-    slug: "{{year}}-{{month}}-{{day}}-{{seconds}}"
-    editor:
-      preview: true
-    fields:
-      - { label: "title-en", name: "title-en", widget: "string" }
-      - { label: "title-es", name: "title-es", widget: "string" }
-      - { label: "description-en", name: "description-en", widget: "markdown" }
-      - { label: "description-es", name: "description-es", widget: "markdown" }
-      - { label: "price-en", name: "price-en", widget: "string" }
-      - { label: "price-es", name: "price-es", widget: "string" }
       - {
-          label: "requirements-en",
-          name: "requirements-en",
-          widget: "markdown",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
         }
-      - {
-          label: "requirements-es",
-          name: "requirements-es",
-          widget: "markdown",
-        }
-      - { label: "regulations-en", name: "regulations-en", widget: "markdown" }
-      - { label: "regulations-es", name: "regulations-es", widget: "markdown" }
+      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "description-es", name: "body", widget: "markdown" }

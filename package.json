@@ -33,7 +33,15 @@
     "react-helmet": "^5.2.1",
     "react-intl": "^4.1.1",
     "react-materialize": "^3.5.9",
-    "react-netlify-identity-widget": "^0.2.7"
+    "react-netlify-identity-widget": "^0.2.7",
+    "rehype-document": "^4.0.0",
+    "rehype-format": "^3.0.1",
+    "rehype-stringify": "^6.0.1",
+    "remark-parse": "^7.0.2",
+    "remark-rehype": "^6.0.0",
+    "to-vfile": "^6.1.0",
+    "unified": "^8.4.2",
+    "vfile-reporter": "^6.0.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
