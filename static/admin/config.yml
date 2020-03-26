@@ -10,7 +10,6 @@ collections:
     label: "Home-EN"
     folder: "content/home/en"
     create: true
-    default: 1
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
@@ -27,7 +26,6 @@ collections:
     label: "Home-ES"
     folder: "content/home/es"
     create: true
-    default: 1
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
@@ -44,7 +42,6 @@ collections:
     label: "About-EN"
     folder: "content/about/es"
     delete: true
-    default: 1
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
@@ -61,7 +58,6 @@ collections:
     label: "About-ES"
     folder: "content/about/es"
     delete: true
-    default: 1
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
@@ -77,7 +73,6 @@ collections:
   - name: "Drivers Education-EN"
     label: "Drivers Education-EN"
     folder: "content/drivers-education"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -95,7 +90,6 @@ collections:
   - name: "Drivers Education-ES"
     label: "Drivers Education-ES"
     folder: "content/drivers-education"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -113,7 +107,6 @@ collections:
   - name: "Drivers Improvement-EN"
     label: "Drivers Improvement-EN"
     folder: "content/drivers-improvement"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -130,7 +123,6 @@ collections:
   - name: "Drivers Improvement-ES"
     label: "Drivers Improvement-ES"
     folder: "content/drivers-improvement"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -148,7 +140,6 @@ collections:
   - name: "Courses-EN"
     label: "Courses-EN"
     folder: "content/courses"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -165,7 +156,6 @@ collections:
   - name: "Courses-ES"
     label: "Courses-ES"
     folder: "content/courses"
-    default: 1
     delete: true
     create: true
     class: "es"
@@ -183,7 +173,6 @@ collections:
   - name: "Registration-EN"
     label: "Registration-EN"
     folder: "content/register"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -200,7 +189,6 @@ collections:
   - name: "Registration-ES"
     label: "Registration-ES"
     folder: "content/register"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -217,7 +205,6 @@ collections:
   - name: "FAQ-EN"
     label: "FAQ-EN"
     folder: "content/faq"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -234,7 +221,6 @@ collections:
   - name: "FAQ-ES"
     label: "FAQ-ES"
     folder: "content/faq"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -252,7 +238,6 @@ collections:
   - name: "Location"
     label: "Location"
     folder: "content/location"
-    default: 1
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
