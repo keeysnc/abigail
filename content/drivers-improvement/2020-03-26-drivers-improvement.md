@@ -1,5 +1,6 @@
 ---
 title: Drivers Improvement
+string: ' Eight-Hour Driver Improvement Clinic'
 ---
 The driver improvement clinic educates and refreshes both new and experienced drivers about defensive driving techniques in order to minimize risk. We are State of Virginia DMV Approved and Licensed.
 
