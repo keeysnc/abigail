@@ -1,6 +1,0 @@
----
-title: Home Description - Spanish
----
-*Es - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget condimentum nisl, sit amet tempus dui. Nam augue diam*, mollis ac sodales at, ultrices eu lectus. Aliquam venenatis ex euismod tellus varius, nec pretium nisl commodo.  **[Driver Education](https://www.google.com)** nec mi ac dictum. Suspendisse pharetra mauris vitae mi ullamcorper porttitor. Pellentesque tempus faucibus eros et egestas. Praesent ut tellus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Lorem i**psum dolor sit amet, consectetur adipiscing elit. Vivamus eget condimentum nisl, sit amet tempus dui. Nam augue diam, mollis ac sodale**s at, ultrices eu lectus. Aliquam venenatis ex euismod tellus varius, nec pretium nisl commodo. Driver Education nec mi ac dictum. **Driver Improvement** pharetra mauris vitae mi ullamcorper porttitor. Pellentesque tempus faucibus eros et egestas. Praesent ut tellus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
