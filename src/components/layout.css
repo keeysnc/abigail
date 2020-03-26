@@ -23,6 +23,7 @@ h1 {
   height: 400px;
   left: -30%;
   bottom: 0;
+  z-index: -1;
 }
 
 .text-width {

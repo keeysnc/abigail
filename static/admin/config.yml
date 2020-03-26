@@ -6,13 +6,12 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: "Home"
-    label: "Home"
-    folder: "content/home"
+  - name: "Home-EN"
+    label: "Home-EN"
+    folder: "content/home/en"
     create: true
     default: 1
     delete: true
-    max: 1
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: false
@@ -23,18 +22,29 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "description-en", name: "body", widget: "markdown" }
-      - {
-          label: "description-es",
-          name: "body",
-          widget: "markdown",
-          class: "es",
-        }
-  - name: "About"
-    label: "About"
-    folder: "content/about"
+      - { label: "home-description-en", name: "body", widget: "markdown" }
+  - name: "Home-ES"
+    label: "Home-ES"
+    folder: "content/home/es"
+    create: true
     default: 1
     delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "home-description-es", name: "body", widget: "markdown" }
+  - name: "About-EN"
+    label: "About-EN"
+    folder: "content/about/es"
+    delete: true
+    default: 1
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
@@ -46,15 +56,26 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "about-description-en", name: "body", widget: "markdown" }
+  - name: "About-ES"
+    label: "About-ES"
+    folder: "content/about/es"
+    delete: true
+    default: 1
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
       - {
-          label: "description-es",
-          name: "body",
-          widget: "markdown",
-          class: "es",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
         }
-  - name: "Drivers Education"
-    label: "Drivers Education"
+      - { label: "about-description-es", name: "body", widget: "markdown" }
+  - name: "Drivers Education-EN"
+    label: "Drivers Education-EN"
     folder: "content/drivers-education"
     default: 1
     delete: true
@@ -69,15 +90,63 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "headline", name: "text", widget: "text" }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Drivers Education-ES"
+    label: "Drivers Education-ES"
+    folder: "content/drivers-education"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
       - {
-          label: "description-es",
-          name: "body",
-          widget: "markdown",
-          class: "es",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
         }
-  - name: "Courses"
-    label: "Courses"
+      - { label: "headline", name: "text", widget: "text" }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Drivers Improvement-EN"
+    label: "Drivers Improvement-EN"
+    folder: "content/drivers-improvement"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Drivers Improvement-ES"
+    label: "Drivers Improvement-ES"
+    folder: "content/drivers-improvement"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "headline", name: "text", widget: "text" }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Courses-EN"
+    label: "Courses-EN"
     folder: "content/courses"
     default: 1
     delete: true
@@ -92,10 +161,124 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "description-en", name: "body", widget: "markdown" }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Courses-ES"
+    label: "Courses-ES"
+    folder: "content/courses"
+    default: 1
+    delete: true
+    create: true
+    class: "es"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
       - {
-          label: "description-es",
-          name: "body",
-          widget: "markdown",
-          class: "es",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
         }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Registration-EN"
+    label: "Registration-EN"
+    folder: "content/register"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "headline", name: "text", widget: "text" }
+  - name: "Registration-ES"
+    label: "Registration-ES"
+    folder: "content/register"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "headline", name: "text", widget: "text" }
+  - name: "FAQ-EN"
+    label: "FAQ-EN"
+    folder: "content/faq"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "FAQ-ES"
+    label: "FAQ-ES"
+    folder: "content/faq"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "headline", name: "text", widget: "text" }
+      - { label: "description", name: "body", widget: "markdown" }
+  - name: "Location"
+    label: "Location"
+    folder: "content/location"
+    default: 1
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Location", name: "location", widget: "map" }
+  - label: "Testimonials"
+    name: "testimonials"
+    folder: "content/testimonials"
+    widget: "list"
+    fields:
+      - {
+          label: Quote,
+          name: quote,
+          widget: string,
+          default: "Everything is awesome!",
+        }
+      - label: Author
+        name: author
+        widget: object
+        fields:
+          - { label: Name, name: name, widget: string, default: "Emmet" }
+          - {
+              label: Avatar,
+              name: avatar,
+              widget: image,
+              default: "/img/emmet.jpg",
+            }
