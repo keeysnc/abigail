@@ -50,6 +50,9 @@ const Header = ({ siteTitle, props }) => {
             faq={intl.formatMessage({
               id: "home.menu_items.faq",
             })}
+            faq={intl.formatMessage({
+              id: "home.menu_items.training",
+            })}
           />
         </div>
       </div>

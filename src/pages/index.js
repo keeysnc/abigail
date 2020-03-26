@@ -34,7 +34,6 @@ const IndexPage = () => {
       <Paragraph
         title={intl.formatMessage({ id: "home.pagetitle" })}
         message_en={data.home.html}
-        message_es={data.home.html}
       />
       <HorizontalRule altColor={false} />
       {/* <SliderRender /> */}
