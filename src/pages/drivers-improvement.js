@@ -10,22 +10,35 @@ import HorizontalRule from "../components/HorizontalRule"
 import Accordion from "../components/Accordion"
 
 const DriversImprovement = ({ intl }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      driversImp: markdownRemark(
+        fileAbsolutePath: { regex: "/drivers-improvement/" }
+      ) {
+        frontmatter {
+          title
+          string
+        }
+        id
+        html
+      }
+    }
+  `)
   return (
     <Layout>
-      <SEO lang={intl.locale} title={intl.formatMessage({ id: "pagetitle" })} />
+      <SEO
+        lang={intl.locale}
+        title={intl.formatMessage({ id: "drivers_improvement.title" })}
+      />
       <CardRender
         pagetitle={intl.formatMessage({ id: "drivers_improvement.pagetitle" })}
         message={intl.formatMessage({ id: "drivers_improvement.message" })}
       />
       <HorizontalRule />
-      {/* <Accordion>
-        <div label={data.driverEd.frontmatter.title}>
-          <CourseInfo
-            message_en={data.driverEd.html}
-            message_es={data.driverEd.html}
-          />
-        </div>
-      </Accordion> */}
+      <CourseInfo
+        message={data.driversImp.html}
+        title={data.driversImp.frontmatter.string}
+      />
     </Layout>
   )
 }

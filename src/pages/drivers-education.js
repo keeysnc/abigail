@@ -33,10 +33,7 @@ const DriversEd = ({ intl }) => {
       <HorizontalRule />
       <Accordion>
         <div label={data.courses.frontmatter.title}>
-          <CourseInfo
-            message_en={data.courses.html}
-            message_es={data.courses.html}
-          />
+          <CourseInfo message_en={data.courses.html} />
         </div>
         <div></div>
       </Accordion>

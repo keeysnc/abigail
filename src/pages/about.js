@@ -22,7 +22,7 @@ const About = ({ intl }) => {
     <Layout>
       <SEO
         lang={intl.locale}
-        title={intl.formatMessage({ id: "about.pagetitle" })}
+        title={intl.formatMessage({ id: "about.title" })}
       />
       <Paragraph
         title={intl.formatMessage({ id: "about.pagetitle" })}

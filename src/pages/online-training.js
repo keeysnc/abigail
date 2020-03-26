@@ -9,7 +9,10 @@ import HorizontalRule from "../components/HorizontalRule"
 
 const Training = ({ intl }) => (
   <Layout>
-    <SEO lang={intl.locale} title={intl.formatMessage({ id: "title_page2" })} />
+    <SEO
+      lang={intl.locale}
+      title={intl.formatMessage({ id: "training.title" })}
+    />
     <CardRender pagetitle={"Online Training"} />
     <HorizontalRule />
     <CourseInfo />

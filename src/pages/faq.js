@@ -66,10 +66,7 @@ const Faq = ({ intl }) => {
 
   return (
     <Layout>
-      <SEO
-        lang={intl.locale}
-        title={intl.formatMessage({ id: "title_page2" })}
-      />
+      <SEO lang={intl.locale} title={intl.formatMessage({ id: "faq.title" })} />
       <Paragraph pagetitle={pagetitle} message={message} />
     </Layout>
   )
