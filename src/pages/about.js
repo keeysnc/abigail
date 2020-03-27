@@ -26,8 +26,7 @@ const About = ({ intl }) => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "about.pagetitle" })}
-        message_en={data.about.html}
-        message_es={data.about.html}
+        message={data.about.html}
       />
     </Layout>
   )
