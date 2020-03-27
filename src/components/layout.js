@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, withPrefix } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { injectIntl } from "gatsby-plugin-intl"
 import IdentityModal, {
   useIdentityContext,
@@ -34,14 +34,13 @@ const Layout = ({ children, intl }) => {
 
   return (
     <>
-      <Header siteTitle={intl.formatMessage({ id: "home.title" })} />
-      <nav style={{ background: "green" }}>
+      <nav style={{ background: "gray" }}>
         {" "}
-        Login Status:
         <button className="btn" onClick={() => setDialog(true)}>
           {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
         </button>
       </nav>
+      <Header siteTitle={intl.formatMessage({ id: "home.title" })} />
       <div className="container">
         <main>{children}</main>
         <IdentityModal

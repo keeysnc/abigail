@@ -15,6 +15,10 @@ footer .contact-list li {
   padding-bottom: 20px;
 }
 
+footer .contact-list a {
+  color: rgb(80, 227, 194);
+}
+
 footer .social-media {
   display: flex;
   flex-direction: row;
@@ -22,4 +26,8 @@ footer .social-media {
 
 footer .social-media li {
   padding-right: 20px;
+}
+
+footer .page-footer .col {
+  width: 100% !important;
 }

@@ -90,5 +90,15 @@
   "faq": {
     "title": "Abigail's Driving School - FAQ",
     "pagetitle": "FAQ"
+  },
+  "contact": {
+    "contact": "Contact",
+    "phone": "Phone",
+    "mobile": "Mobile",
+    "email": "Email",
+    "hours": "Hours",
+    "contact_hours": "Customer Contact Hours",
+    "address": "Address",
+    "service_area": "Service Area"
   }
 }
