@@ -105,7 +105,7 @@ collections:
       - { label: "faq-content", name: "body", widget: "markdown" }
   - name: "Online Training"
     label: "Online Training"
-    folder: "content/training"
+    folder: "content/online-training"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
