@@ -1,11 +1,9 @@
 import React from "react"
-import { FormattedMessage, Link, useIntl, injectIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import Testimonial from "./Testimonial"
 import "./slider.css"
-import { render } from "react-dom"
 
 const SimpleSlider = props => {
   const intl = useIntl()

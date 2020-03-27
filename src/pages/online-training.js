@@ -1,22 +1,38 @@
 import React from "react"
-import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
-
+import { injectIntl } from "gatsby-plugin-intl"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Paragraph from "../components/paragraphSection"
 import CardRender from "../components/CardRender"
-import CourseInfo from "../components/CourseInfo"
-import HorizontalRule from "../components/HorizontalRule"
 
-const Training = ({ intl }) => (
-  <Layout>
-    <SEO
-      lang={intl.locale}
-      title={intl.formatMessage({ id: "training.title" })}
-    />
-    <CardRender pagetitle={"Online Training"} />
-    <HorizontalRule />
-    <CourseInfo />
-  </Layout>
-)
+const Training = ({ intl }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      training: markdownRemark(
+        fileAbsolutePath: { regex: "/online-training/" }
+      ) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
+    }
+  `)
+  return (
+    <Layout>
+      <SEO lang={intl.locale} title={intl.formatMessage({ id: "faq.title" })} />
+      <CardRender
+        pagetitle={intl.formatMessage({ id: "training.pagetitle" })}
+        message={intl.formatMessage({ id: "training.message" })}
+      />
+      <Paragraph
+        title={intl.formatMessage({ id: "training.pagetitle" })}
+        message={data.training.html}
+      />
+    </Layout>
+  )
+}
 
 export default injectIntl(Training)

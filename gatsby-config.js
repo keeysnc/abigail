@@ -61,6 +61,13 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/online-training`,
+        name: `markdown-pages`,
+      },
+    },
     "gatsby-transformer-remark",
     `gatsby-plugin-react-helmet`,
     {

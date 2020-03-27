@@ -1,5 +1,4 @@
-import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
-import PropTypes from "prop-types"
+import { Link } from "gatsby-plugin-intl"
 import React from "react"
 
 import "./navMenu.css"

@@ -1,5 +1,5 @@
 import React from "react"
-import { FormattedMessage, injectIntl, navigate } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"

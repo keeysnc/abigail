@@ -1,5 +1,5 @@
 import React from "react"
-import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import "materialize-css/dist/css/materialize.min.css"

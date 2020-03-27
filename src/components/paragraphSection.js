@@ -1,5 +1,4 @@
 import React from "react"
-import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl"
 import Image from "../components/image"
 import { useStaticQuery, graphql } from "gatsby"
 
