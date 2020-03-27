@@ -11,12 +11,16 @@ import Accordion from "../components/Accordion"
 const DriversEd = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      courses: markdownRemark(fileAbsolutePath: { regex: "/courses/" }) {
-        frontmatter {
-          title
+      courses: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/courses/" } }
+      ) {
+        nodes {
+          fileAbsolutePath
+          html
+          frontmatter {
+            title
+          }
         }
-        id
-        html
       }
     }
   `)
@@ -32,10 +36,24 @@ const DriversEd = ({ intl }) => {
       />
       <HorizontalRule />
       <Accordion>
-        <div label={data.courses.frontmatter.title}>
-          <CourseInfo message_en={data.courses.html} />
+        <div label={data.courses.nodes[0].frontmatter.title}>
+          <CourseInfo message_en={data.courses.nodes[0].html} />
         </div>
-        <div></div>
+        <div label={data.courses.nodes[1].frontmatter.title}>
+          <CourseInfo message_en={data.courses.nodes[1].html} />
+        </div>
+        <div label={data.courses.nodes[2].frontmatter.title}>
+          <CourseInfo message_en={data.courses.nodes[2].html} />
+        </div>
+        <div label={data.courses.nodes[3].frontmatter.title}>
+          <CourseInfo message_en={data.courses.nodes[3].html} />
+        </div>
+        <div label={data.courses.nodes[4].frontmatter.title}>
+          <CourseInfo message_en={data.courses.nodes[4].html} />
+        </div>
+        <div label={data.courses.nodes[5].frontmatter.title}>
+          <CourseInfo message_en={data.courses.nodes[5].html} />
+        </div>
       </Accordion>
     </Layout>
   )
