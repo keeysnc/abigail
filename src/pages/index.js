@@ -6,7 +6,7 @@ import "materialize-css/dist/css/materialize.min.css"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
-import SliderRender from "../components/SliderRender"
+import SimpleSlider from "../components/SimpleSlider"
 import HorizontalRule from "../components/HorizontalRule"
 
 const IndexPage = () => {
@@ -33,10 +33,14 @@ const IndexPage = () => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "home.pagetitle" })}
-        message_en={data.home.html}
+        message={data.home.html}
       />
       <HorizontalRule altColor={false} />
-      {/* <SliderRender /> */}
+      <SimpleSlider
+        title={intl.formatMessage({
+          id: "home.testimonials.testimonial_title",
+        })}
+      />
     </Layout>
   )
 }

@@ -20,8 +20,7 @@ const Paragraph = props => {
   return (
     <div className="paragraph section">
       <h1>{props.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.message_en }} />
-      <div dangerouslySetInnerHTML={{ __html: props.message_es }} />
+      <div dangerouslySetInnerHTML={{ __html: props.message }} />
       <br />
       <Image visual={data.accreditedLogo.childImageSharp.fixed} />
     </div>
