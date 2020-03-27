@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import CardRender from "../components/CardRender"
 import CourseInfo from "../components/CourseInfo"
 import HorizontalRule from "../components/HorizontalRule"
-import Accordion from "../components/Accordion"
 
 const DriversImprovement = ({ intl }) => {
   const data = useStaticQuery(graphql`
