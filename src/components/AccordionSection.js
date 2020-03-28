@@ -53,7 +53,6 @@ class AccordionSection extends Component {
             style={{
               background: "#F7F7F7",
               marginTop: 10,
-              padding: "10px 20px",
             }}
           >
             {this.props.children}

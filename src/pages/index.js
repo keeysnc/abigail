@@ -3,6 +3,7 @@ import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import "materialize-css/dist/css/materialize.min.css"
+import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
@@ -20,6 +21,13 @@ const IndexPage = () => {
         id
         html
       }
+      accreditedLogo: file(relativePath: { eq: "accredited-biz-logo.png" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
   return (
@@ -35,6 +43,7 @@ const IndexPage = () => {
         title={intl.formatMessage({ id: "home.pagetitle" })}
         message={data.home.html}
       />
+      <Image visual={data.accreditedLogo.childImageSharp.fixed} />
       <HorizontalRule altColor={false} />
       <SimpleSlider
         title={intl.formatMessage({

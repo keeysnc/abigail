@@ -100,5 +100,8 @@
     "contact_hours": "Horas de Contacto",
     "address": "Dirección",
     "service_area": "Área de servicio"
+  },
+  "button": {
+    "register": "Registrarse"
   }
 }

@@ -37,22 +37,22 @@ const DriversEd = ({ intl }) => {
       <HorizontalRule />
       <Accordion>
         <div label={data.courses.nodes[0].frontmatter.title}>
-          <CourseInfo message_en={data.courses.nodes[0].html} />
+          <CourseInfo message={data.courses.nodes[0].html} />
         </div>
         <div label={data.courses.nodes[1].frontmatter.title}>
-          <CourseInfo message_en={data.courses.nodes[1].html} />
+          <CourseInfo message={data.courses.nodes[1].html} />
         </div>
         <div label={data.courses.nodes[2].frontmatter.title}>
-          <CourseInfo message_en={data.courses.nodes[2].html} />
+          <CourseInfo message={data.courses.nodes[2].html} />
         </div>
         <div label={data.courses.nodes[3].frontmatter.title}>
-          <CourseInfo message_en={data.courses.nodes[3].html} />
+          <CourseInfo message={data.courses.nodes[3].html} />
         </div>
         <div label={data.courses.nodes[4].frontmatter.title}>
-          <CourseInfo message_en={data.courses.nodes[4].html} />
+          <CourseInfo message={data.courses.nodes[4].html} />
         </div>
         <div label={data.courses.nodes[5].frontmatter.title}>
-          <CourseInfo message_en={data.courses.nodes[5].html} />
+          <CourseInfo message={data.courses.nodes[5].html} />
         </div>
       </Accordion>
     </Layout>
