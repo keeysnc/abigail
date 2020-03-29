@@ -119,13 +119,42 @@ collections:
           hint: "title of node",
         }
       - { label: "training-content", name: "body", widget: "markdown" }
-  - name: "Location"
-    label: "Location"
-    folder: "content/location"
+  - name: "News"
+    label: "News"
+    folder: "content/news"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     editor:
       preview: false
     fields:
-      - { label: "Location", name: "location", widget: "map" }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "news-content", name: "body", widget: "markdown" }
+  - name: "Products"
+    label: "Products"
+    folder: "content/products"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "product-name", name: "string", widget: "string" }
+      - { label: "product-price", name: "text", widget: "string" }
+      - {
+          label: "product-sale",
+          name: "number",
+          widget: "number",
+          required: false,
+        }

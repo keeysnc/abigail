@@ -103,5 +103,8 @@
   },
   "button": {
     "register": "Registrarse"
+  },
+  "news": {
+    "title": "Noticias"
   }
 }

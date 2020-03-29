@@ -100,5 +100,11 @@
     "contact_hours": "Customer Contact Hours",
     "address": "Address",
     "service_area": "Service Area"
+  },
+  "button": {
+    "register": "Register"
+  },
+  "news": {
+    "title": "News"
   }
 }

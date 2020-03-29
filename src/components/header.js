@@ -58,6 +58,15 @@ const Header = ({ siteTitle, props }) => {
       </div>
       <div className="translate">
         <Language />
+        <Link
+          style={{
+            marginTop: "20px",
+          }}
+          className="btn"
+          to="/news"
+        >
+          News
+        </Link>
       </div>
     </header>
   )
