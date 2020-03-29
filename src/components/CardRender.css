@@ -1,0 +1,13 @@
+@media only screen and (max-width: 960px) {
+  .card.horizontal {
+    flex-direction: column !important;
+  }
+
+  .card.horizontal .card-image {
+    max-width: 100% !important;
+  }
+
+  .nav-menu a {
+    display: block !important;
+  }
+}

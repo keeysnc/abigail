@@ -1,11 +1,28 @@
+@media only screen and (max-width: 960px) {
+  .nav-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .nav-menu {
+    padding-top: 10px;
+  }
+  .nav-menu a {
+    margin-left: 0 !important;
+  }
+
+  .translate {
+    text-align: left !important;
+  }
+}
+
 .nav-menu {
   position: relative;
 }
 
 .nav-menu a {
-  margin-left: 25px;
+  margin-left: 20px;
   opacity: 0.5;
-  font-size: small;
+  font-size: 0.8rem;
 }
 
 .nav-menu a:hover {

@@ -2,6 +2,8 @@ import React from "react"
 import { Card, CardTitle, Icon, Col, Row } from "react-materialize"
 import { useStaticQuery, graphql } from "gatsby"
 
+import "../components/CardRender.css"
+
 const CardRender = props => {
   const data = useStaticQuery(graphql`
     query {
@@ -19,12 +21,12 @@ const CardRender = props => {
       <Row>
         <Col m={12} s={12}>
           <Card
-            closeIcon={<Icon>close</Icon>}
+            closeicon={<Icon>close</Icon>}
             header={
               <CardTitle image={data.driversEd.childImageSharp.fluid.src} />
             }
             horizontal
-            revealIcon={<Icon>more_vert</Icon>}
+            revealicon={<Icon>more_vert</Icon>}
           >
             <h3>{props.pagetitle}</h3>
             <p>{props.message}</p>

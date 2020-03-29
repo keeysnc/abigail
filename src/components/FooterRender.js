@@ -22,9 +22,7 @@ const FooterRender = ({ intl }) => {
             <span>
               <b>{intl.formatMessage({ id: "contact.phone" })}: </b>
             </span>
-            <a class="" href="tel:8042563147">
-              804-256-3147
-            </a>
+            <a href="tel:8042563147">804-256-3147</a>
           </li>
           <li>
             <span>
