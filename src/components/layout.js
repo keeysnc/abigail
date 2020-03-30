@@ -34,12 +34,12 @@ const Layout = ({ children, intl }) => {
 
   return (
     <>
-      <nav style={{ background: "gray" }}>
+      {/* <nav style={{ background: "gray" }}>
         {" "}
         <button className="btn" onClick={() => setDialog(true)}>
           {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
         </button>
-      </nav>
+      </nav> */}
       <Header siteTitle={intl.formatMessage({ id: "home.title" })} />
       <div className="container">
         <main>{children}</main>
