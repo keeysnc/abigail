@@ -12,10 +12,8 @@ export default props => (
     <input type="hidden" name="contact" value="contact" />
     <div>
       <h3>Courses</h3>
-      <select id="products" required multiple>
-        <option value="" selected="selected">
-          Select
-        </option>
+      <select name="products" id="products-select" required multiple>
+        <option selected="default">Select</option>
         <option value={props.productOne[0]}>
           {props.productOne[0]} | {props.productOne[1]} | {props.productOne[2]}
         </option>
@@ -23,19 +21,19 @@ export default props => (
           {props.productTwo[0]} | {props.productTwo[1]} | {props.productTwo[2]}
         </option>
         <option value={props.productThree[0]}>
-          {props.productThree[0]} | {props.productThree[1]} |{" "}
+          {props.productThree[0]} | {props.productThree[1]} |
           {props.productThree[2]}
         </option>
         <option value={props.productFour[0]}>
-          {props.productFour[0]} | {props.productFour[1]} |{" "}
+          {props.productFour[0]} | {props.productFour[1]} |
           {props.productFour[2]}
         </option>
         <option value={props.productFive[0]}>
-          {props.productFive[0]} | {props.productFive[1]} |{" "}
+          {props.productFive[0]} | {props.productFive[1]} |
           {props.productFive[2]}
         </option>
       </select>
-      <label htmlFor="products">Products</label>
+      <label htmlFor="products-select">Products</label>
     </div>
 
     <div className="section">
@@ -54,7 +52,12 @@ export default props => (
       </div>
     </div>
     <div>
-      <select id="has-taken-drivers-ed" required multiple>
+      <select
+        name="has-taken-drivers-ed"
+        id="has-taken-drivers-ed"
+        required
+        multiple
+      >
         <option value="" selected="selected">
           Select
         </option>
@@ -82,8 +85,8 @@ export default props => (
         <input type="text" name="city" id="city" />
         <label htmlFor="city">City</label>
         <div className="section">
-          <select className="state" id="state" required>
-            <option value="" selected="selected">
+          <select className="state" id="state" name="state" required>
+            <option value="" selected="default">
               Select
             </option>
             <option value="AL">Alabama</option>
@@ -141,7 +144,7 @@ export default props => (
           <label htmlFor="state">State</label>
           <div></div>
           <div className="section">
-            <select id="how-many-hours" required multiple>
+            <select id="how-many-hours" name="how-many-hours" required multiple>
               <option value="" selected="selected">
                 Select
               </option>
@@ -159,10 +162,8 @@ export default props => (
           </div>
         </div>
         <div>
-          <select id="desired-times" required>
-            <option value="" selected="selected">
-              Select
-            </option>
+          <select id="desired-times" name="desired-times" required>
+            <option selected="default">Select</option>
             <option value="session-1">Session 1: 6am - 10am</option>
             <option value="session-2">Session 2: 10am - 2pm</option>
             <option value="session-3">Session 3: 2pm - 6pm</option>
@@ -173,7 +174,7 @@ export default props => (
         </div>
       </div>
       <div className="section">
-        <select id="days" required multiple>
+        <select id="days" name="days" required multiple>
           <option value="" selected="selected">
             Select
           </option>
@@ -193,7 +194,7 @@ export default props => (
       </div>
       <div>
         <h3>Payment Options</h3>
-        <select id="payment" required>
+        <select id="payment" name="payment" required>
           <option value="" selected="selected">
             Select
           </option>
@@ -258,16 +259,16 @@ export default props => (
           <li>
             Abigail’s Driving School reserves the right to refer certain
             services to a third party if the school is unable to accommodate a
-            customer.{" "}
+            customer.
           </li>
         </ol>
       </div>
       <div>
-        <input type="text" name="signature" id="signature" />
+        <input type="text" name="signature" id="signature" required />
         <label htmlFor="signature">Signature</label>
       </div>
       <div>
-        <input type="date" name="date" id="date" />
+        <input type="date" name="date" id="date" required />
         <label htmlFor="date">Date</label>
       </div>
     </div>
