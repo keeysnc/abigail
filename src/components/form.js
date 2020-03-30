@@ -9,7 +9,7 @@ export default props => (
     data-netlify-honeypot="bot-field"
   >
     <input type="hidden" name="bot-field" />
-    <input type="hidden" name="contact" value="contact" />
+    <input type="hidden" name="form-name" value="contact" />
     <div>
       <h3>Courses</h3>
       <select name="products" id="products-select" required multiple>
