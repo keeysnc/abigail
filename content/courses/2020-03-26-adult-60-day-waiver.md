@@ -1,4 +1,8 @@
 ---
-title: Adult 60-Day Waiver
+title: Adult Drivers Education
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Individuals who are 18 years of age and older who have never held any U. S. state issued driver’s license, must hold their Virginia learner’s permit for 60 days prior to being eligible to take the road
+test at DMV. To waive the requirement to hold the permit for 60 days, the
+individual can complete a state-approved driver’s education program - also known as the 60-Day
+Waiver. Upon completion, the school will conduct your road test. This course is identical to the teen
+driver’s education program.
