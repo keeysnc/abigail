@@ -8,7 +8,7 @@ import CourseInfo from "../components/CourseInfo"
 import HorizontalRule from "../components/HorizontalRule"
 import Accordion from "../components/Accordion"
 
-const DriversEd = ({ intl }) => {
+const Services = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
       courses: allMarkdownRemark(
@@ -28,11 +28,11 @@ const DriversEd = ({ intl }) => {
     <Layout>
       <SEO
         lang={intl.locale}
-        title={intl.formatMessage({ id: "drivers_education.title" })}
+        title={intl.formatMessage({ id: "services.title" })}
       />
       <CardRender
-        pagetitle={intl.formatMessage({ id: "drivers_education.pagetitle" })}
-        message={intl.formatMessage({ id: "drivers_education.message" })}
+        pagetitle={intl.formatMessage({ id: "services.pagetitle" })}
+        message={intl.formatMessage({ id: "services.message" })}
       />
       <HorizontalRule />
       <Accordion>
@@ -48,15 +48,9 @@ const DriversEd = ({ intl }) => {
         <div label={data.courses.nodes[3].frontmatter.title}>
           <CourseInfo message={data.courses.nodes[3].html} />
         </div>
-        <div label={data.courses.nodes[4].frontmatter.title}>
-          <CourseInfo message={data.courses.nodes[4].html} />
-        </div>
-        <div label={data.courses.nodes[5].frontmatter.title}>
-          <CourseInfo message={data.courses.nodes[5].html} />
-        </div>
       </Accordion>
     </Layout>
   )
 }
 
-export default injectIntl(DriversEd)
+export default injectIntl(Services)

@@ -7,7 +7,7 @@ const NavMenu = props => (
   <div className="nav-menu">
     <Link to="/">{props.home}</Link>
     <Link to="/about">{props.about}</Link>
-    <Link to="/drivers-education">{props.driversEd}</Link>
+    <Link to="/services">{props.services}</Link>
     <Link to="/drivers-improvement">{props.driversImp}</Link>
     <Link to="/registration">{props.registration}</Link>
     <Link to="/faq">{props.faq}</Link>

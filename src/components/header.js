@@ -38,8 +38,8 @@ const Header = ({ siteTitle, props }) => {
             about={intl.formatMessage({
               id: "home.menu_items.about",
             })}
-            driversEd={intl.formatMessage({
-              id: "home.menu_items.drivers_ed",
+            services={intl.formatMessage({
+              id: "home.menu_items.services",
             })}
             driversImp={intl.formatMessage({
               id: "home.menu_items.drivers_imp",

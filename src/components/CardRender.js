@@ -7,7 +7,7 @@ import "../components/CardRender.css"
 const CardRender = props => {
   const data = useStaticQuery(graphql`
     query {
-      driversEd: file(relativePath: { eq: "drivers-ed.png" }) {
+      services: file(relativePath: { eq: "drivers-ed.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -23,7 +23,7 @@ const CardRender = props => {
           <Card
             closeicon={<Icon>close</Icon>}
             header={
-              <CardTitle image={data.driversEd.childImageSharp.fluid.src} />
+              <CardTitle image={data.services.childImageSharp.fluid.src} />
             }
             horizontal
             revealicon={<Icon>more_vert</Icon>}
