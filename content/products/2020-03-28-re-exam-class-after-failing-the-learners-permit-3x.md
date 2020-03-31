@@ -1,7 +1,5 @@
 ---
-title: Re-Exam Class after failing the learners permit 3x
-string: >-
-  Re-Exam Class after failing the learners permit 3x | Reexamen de clase después
-  de reprobar el permiso de aprendizaje 3x
+title: 'Driver&#39;s Manual Course'
+string: Driver's Manual Course | Curso del manual del conductor
 text: $175
 ---
