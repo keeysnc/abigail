@@ -26,7 +26,7 @@ class AccordionSection extends Component {
       <div
         className="accordion-section"
         style={{
-          background: isOpen ? "#F7F7F7" : "#F7F7F7",
+          background: isOpen ? "white" : "white",
           padding: "5px 10px",
         }}
       >
@@ -51,7 +51,7 @@ class AccordionSection extends Component {
         {isOpen && (
           <div
             style={{
-              background: "#F7F7F7",
+              background: "white",
               marginTop: 10,
             }}
           >

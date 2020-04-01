@@ -39,7 +39,7 @@ class Accordion extends Component {
 
     return (
       <div className="section">
-        <div style={{ padding: "3rem", background: "rgb(247, 247, 247)" }}>
+        <div style={{ padding: "3rem", background: "white" }}>
           {children.map(child => (
             <AccordionSection
               isOpen={!!openSections[child.props.label]}

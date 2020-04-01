@@ -1,5 +1,5 @@
 header {
-  background: white;
+  background: transparent;
   margin-bottom: 1.45rem;
 }
 
@@ -30,5 +30,5 @@ header {
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
 }
