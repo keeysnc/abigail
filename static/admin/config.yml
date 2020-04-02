@@ -108,7 +108,22 @@ collections:
           hint: "title of node",
         }
       - { label: "description", name: "body", widget: "markdown" }
-      - { label: "description-es", name: "es-translate", widget: "markdown" }
+  - name: "Courses-es"
+    label: "Courses-es"
+    folder: "content/courses-es"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title-es",
+          name: "title-es",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "description-es", name: "body", widget: "markdown" }
   - name: "Registration"
     label: "Registration"
     folder: "content/register"

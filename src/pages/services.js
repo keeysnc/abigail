@@ -11,16 +11,19 @@ import Accordion from "../components/Accordion"
 const Services = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      courses: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/courses/" } }
-      ) {
-        nodes {
-          fileAbsolutePath
-          html
-          frontmatter {
-            title
-          }
+      courses: markdownRemark(fileAbsolutePath: { regex: "/courses/" }) {
+        frontmatter {
+          title
         }
+        id
+        html
+      }
+      coursesEs: markdownRemark(fileAbsolutePath: { regex: "/courses-es/" }) {
+        frontmatter {
+          title
+        }
+        id
+        html
       }
     }
   `)
