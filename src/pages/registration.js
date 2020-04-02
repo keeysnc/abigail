@@ -9,22 +9,22 @@ import HorizontalRule from "../components/HorizontalRule"
 import { useStaticQuery } from "gatsby"
 
 const Registration = ({ intl }) => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     products: allMarkdownRemark(
-  //       filter: { fileAbsolutePath: { regex: "/products/" } }
-  //     ) {
-  //       nodes {
-  //         fileAbsolutePath
-  //         frontmatter {
-  //           text
-  //           string
-  //           number
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query {
+      products: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/products/" } }
+      ) {
+        nodes {
+          fileAbsolutePath
+          frontmatter {
+            text
+            string
+            number
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Layout>
@@ -38,7 +38,7 @@ const Registration = ({ intl }) => {
         title={intl.formatMessage({ id: "registration.title" })}
       />
 
-      {/* <Form
+      <Form
         productOne={[
           data.products.nodes[0].frontmatter.string,
           data.products.nodes[0].frontmatter.text,
@@ -64,7 +64,7 @@ const Registration = ({ intl }) => {
           data.products.nodes[4].frontmatter.text,
           data.products.nodes[4].frontmatter.number,
         ]}
-      /> */}
+      />
     </Layout>
   )
 }

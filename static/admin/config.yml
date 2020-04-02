@@ -265,6 +265,7 @@ collections:
           hint: "title of node",
         }
       - { label: "product-name", name: "string", widget: "string" }
+      - { label: "product-price", name: "price", widget: "number" }
       - {
           label: "product-sale",
           name: "number",
