@@ -11,22 +11,31 @@ import Accordion from "../components/Accordion"
 const Services = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      courses: markdownRemark(fileAbsolutePath: { regex: "/courses/" }) {
-        frontmatter {
-          title
+      courses: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/courses/" } }
+      ) {
+        nodes {
+          fileAbsolutePath
+          html
+          frontmatter {
+            title
+          }
         }
-        id
-        html
       }
-      coursesEs: markdownRemark(fileAbsolutePath: { regex: "/courses-es/" }) {
-        frontmatter {
-          title
+      coursesEs: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/courses-es/" } }
+      ) {
+        nodes {
+          fileAbsolutePath
+          html
+          frontmatter {
+            title_es
+          }
         }
-        id
-        html
       }
     }
   `)
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <SEO
@@ -39,17 +48,65 @@ const Services = ({ intl }) => {
       />
       <HorizontalRule />
       <Accordion>
-        <div label={data.courses.nodes[0].frontmatter.title}>
-          <CourseInfo message={data.courses.nodes[0].html} />
+        <div
+          label={
+            path.match("/en/")
+              ? data.courses.nodes[0].frontmatter.title
+              : data.coursesEs.nodes[0].frontmatter.title_es
+          }
+        >
+          <CourseInfo
+            message={
+              path.match("/en/")
+                ? data.courses.nodes[0].html
+                : data.coursesEs.nodes[0].html
+            }
+          />
         </div>
-        <div label={data.courses.nodes[1].frontmatter.title}>
-          <CourseInfo message={data.courses.nodes[1].html} />
+        <div
+          label={
+            path.match("/en/")
+              ? data.courses.nodes[1].frontmatter.title
+              : data.coursesEs.nodes[1].frontmatter.title_es
+          }
+        >
+          <CourseInfo
+            message={
+              path.match("/en/")
+                ? data.courses.nodes[1].html
+                : data.coursesEs.nodes[1].html
+            }
+          />
         </div>
-        <div label={data.courses.nodes[2].frontmatter.title}>
-          <CourseInfo message={data.courses.nodes[2].html} />
+        <div
+          label={
+            path.match("/en/")
+              ? data.courses.nodes[2].frontmatter.title
+              : data.coursesEs.nodes[2].frontmatter.title_es
+          }
+        >
+          <CourseInfo
+            message={
+              path.match("/en/")
+                ? data.courses.nodes[2].html
+                : data.coursesEs.nodes[2].html
+            }
+          />
         </div>
-        <div label={data.courses.nodes[3].frontmatter.title}>
-          <CourseInfo message={data.courses.nodes[3].html} />
+        <div
+          label={
+            path.match("/en/")
+              ? data.courses.nodes[3].frontmatter.title
+              : data.coursesEs.nodes[3].frontmatter.title_es
+          }
+        >
+          <CourseInfo
+            message={
+              path.match("/en/")
+                ? data.courses.nodes[3].html
+                : data.coursesEs.nodes[3].html
+            }
+          />
         </div>
       </Accordion>
     </Layout>

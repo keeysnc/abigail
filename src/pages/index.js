@@ -38,7 +38,7 @@ const IndexPage = () => {
     }
   `)
 
-  let locale = window.location.pathname
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <Hero herotitle={intl.formatMessage({ id: "home.herotitle" })} />
@@ -50,7 +50,7 @@ const IndexPage = () => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "home.pagetitle" })}
-        message={locale.match("/en/") ? data.home.html : data.homeEs.html}
+        message={path.match("/en/") ? data.home.html : data.homeEs.html}
       />
       <Image visual={data.accreditedLogo.childImageSharp.fixed} />
       <HorizontalRule altColor={false} />

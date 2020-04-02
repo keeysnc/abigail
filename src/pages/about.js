@@ -25,7 +25,7 @@ const About = ({ intl }) => {
       }
     }
   `)
-  let locale = window.location.pathname
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <SEO
@@ -34,7 +34,7 @@ const About = ({ intl }) => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "about.pagetitle" })}
-        message={locale.match("/en/") ? data.about.html : data.aboutEs.html}
+        message={path.match("/en/") ? data.about.html : data.aboutEs.html}
       />
     </Layout>
   )

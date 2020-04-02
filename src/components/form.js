@@ -12,7 +12,7 @@ export default props => (
     <input type="hidden" name="form-name" value="contact" />
     <div>
       <h3>Courses</h3>
-      <select name="products" id="products-select" required multiple>
+      {/* <select name="products" id="products-select" required multiple>
         <option selected="default">Select</option>
         <option value={props.productOne[0]}>
           {props.productOne[0]} | {props.productOne[1]} | {props.productOne[2]}
@@ -33,7 +33,7 @@ export default props => (
           {props.productFive[2]}
         </option>
       </select>
-      <label htmlFor="products-select">Products</label>
+      <label htmlFor="products-select">Products</label> */}
     </div>
 
     <div className="section">

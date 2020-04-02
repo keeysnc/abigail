@@ -22,8 +22,8 @@ collections:
           hint: "title of node",
         }
       - { label: "home-content", name: "body", widget: "markdown" }
-  - name: "Home-es"
-    label: "Home-es"
+  - name: "Hogar"
+    label: "Hogar"
     folder: "content/home-es"
     create: true
     delete: true
@@ -37,7 +37,7 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "home-content-es", name: "body", widget: "markdown" }
+      - { label: "hogar-content", name: "body", widget: "markdown" }
   - name: "About"
     label: "About"
     folder: "content/about"
@@ -54,8 +54,8 @@ collections:
           hint: "title of node",
         }
       - { label: "about-content", name: "body", widget: "markdown" }
-  - name: "About-es"
-    label: "About-es"
+  - name: "Acerca de"
+    label: "Acerca de"
     folder: "content/about-es"
     delete: true
     create: true
@@ -69,7 +69,7 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "about-content-es", name: "body", widget: "markdown" }
+      - { label: "acerca-de-content", name: "body", widget: "markdown" }
   - name: "Drivers Improvement"
     label: "Drivers Improvement"
     folder: "content/drivers-improvement"
@@ -87,9 +87,29 @@ collections:
         }
       - { label: "improvement-title", name: "string", widget: "string" }
       - { label: "improvement-content", name: "body", widget: "markdown" }
+  - name: "Mejora de conductores"
+    label: "Mejora de conductores"
+    folder: "content/drivers-improvement-es"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
       - {
-          label: "improvement-content-es",
-          name: "es-translate",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - {
+          label: "mejora-de-conductores-title",
+          name: "string",
+          widget: "string",
+        }
+      - {
+          label: "mejora-de-conductores-content",
+          name: "body",
           widget: "markdown",
         }
   - name: "Courses"
@@ -108,8 +128,8 @@ collections:
           hint: "title of node",
         }
       - { label: "description", name: "body", widget: "markdown" }
-  - name: "Courses-es"
-    label: "Courses-es"
+  - name: "Cursos"
+    label: "Cursos"
     folder: "content/courses-es"
     delete: true
     create: true
@@ -123,7 +143,7 @@ collections:
           widget: "string",
           hint: "title of node",
         }
-      - { label: "description-es", name: "body", widget: "markdown" }
+      - { label: "cursos-content", name: "body", widget: "markdown" }
   - name: "Registration"
     label: "Registration"
     folder: "content/register"
@@ -161,7 +181,6 @@ collections:
           hint: "title of node",
         }
       - { label: "faq-content", name: "body", widget: "markdown" }
-      - { label: "faq-content-es", name: "es-translate", widget: "markdown" }
   - name: "Online Training"
     label: "Online Training"
     folder: "content/online-training"
@@ -178,9 +197,24 @@ collections:
           hint: "title of node",
         }
       - { label: "training-content", name: "body", widget: "markdown" }
+  - name: "Entrenamiento en linea"
+    label: "Entrenamiento en linea"
+    folder: "content/online-training-es"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
       - {
-          label: "training-content-es",
-          name: "es-translate",
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - {
+          label: "entrenamiento-en-linea-content",
+          name: "body",
           widget: "markdown",
         }
   - name: "News"
@@ -199,7 +233,22 @@ collections:
           hint: "title of node",
         }
       - { label: "news-content", name: "body", widget: "markdown" }
-      - { label: "news-content-es", name: "es-translate", widget: "markdown" }
+  - name: "Noticias"
+    label: "Noticias"
+    folder: "content/news-es"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "noticias-content", name: "body", widget: "markdown" }
   - name: "Products"
     label: "Products"
     folder: "content/products"
