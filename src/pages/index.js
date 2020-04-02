@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
@@ -21,6 +21,13 @@ const IndexPage = () => {
         id
         html
       }
+      homeEs: markdownRemark(fileAbsolutePath: { regex: "/home-es/" }) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
       accreditedLogo: file(relativePath: { eq: "accredited-biz-logo.png" }) {
         childImageSharp {
           fixed {
@@ -30,6 +37,8 @@ const IndexPage = () => {
       }
     }
   `)
+
+  let locale = window.location.pathname
   return (
     <Layout>
       <Hero herotitle={intl.formatMessage({ id: "home.herotitle" })} />
@@ -41,7 +50,7 @@ const IndexPage = () => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "home.pagetitle" })}
-        message={data.home.html}
+        message={locale.match("/en/") ? data.home.html : data.homeEs.html}
       />
       <Image visual={data.accreditedLogo.childImageSharp.fixed} />
       <HorizontalRule altColor={false} />

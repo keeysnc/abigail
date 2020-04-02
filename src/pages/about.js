@@ -16,8 +16,16 @@ const About = ({ intl }) => {
         id
         html
       }
+      aboutEs: markdownRemark(fileAbsolutePath: { regex: "/about-es/" }) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
     }
   `)
+  let locale = window.location.pathname
   return (
     <Layout>
       <SEO
@@ -26,7 +34,7 @@ const About = ({ intl }) => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "about.pagetitle" })}
-        message={data.about.html}
+        message={locale.match("/en/") ? data.about.html : data.aboutEs.html}
       />
     </Layout>
   )

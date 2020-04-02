@@ -22,6 +22,22 @@ collections:
           hint: "title of node",
         }
       - { label: "home-content", name: "body", widget: "markdown" }
+  - name: "Home-es"
+    label: "Home-es"
+    folder: "content/home-es"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title-es",
+          name: "title-es",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "home-content-es", name: "body", widget: "markdown" }
   - name: "About"
     label: "About"
     folder: "content/about"
@@ -38,6 +54,22 @@ collections:
           hint: "title of node",
         }
       - { label: "about-content", name: "body", widget: "markdown" }
+  - name: "About-es"
+    label: "About-es"
+    folder: "content/about-es"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title-es",
+          name: "title-es",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "about-content-es", name: "body", widget: "markdown" }
   - name: "Drivers Improvement"
     label: "Drivers Improvement"
     folder: "content/drivers-improvement"
@@ -55,6 +87,11 @@ collections:
         }
       - { label: "improvement-title", name: "string", widget: "string" }
       - { label: "improvement-content", name: "body", widget: "markdown" }
+      - {
+          label: "improvement-content-es",
+          name: "es-translate",
+          widget: "markdown",
+        }
   - name: "Courses"
     label: "Courses"
     folder: "content/courses"
@@ -71,6 +108,7 @@ collections:
           hint: "title of node",
         }
       - { label: "description", name: "body", widget: "markdown" }
+      - { label: "description-es", name: "es-translate", widget: "markdown" }
   - name: "Registration"
     label: "Registration"
     folder: "content/register"
@@ -87,6 +125,11 @@ collections:
           hint: "title of node",
         }
       - { label: "register-content", name: "text", widget: "text" }
+      - {
+          label: "register-content-es",
+          name: "es-translate",
+          widget: "markdown",
+        }
   - name: "FAQ"
     label: "FAQ"
     folder: "content/faq"
@@ -103,6 +146,7 @@ collections:
           hint: "title of node",
         }
       - { label: "faq-content", name: "body", widget: "markdown" }
+      - { label: "faq-content-es", name: "es-translate", widget: "markdown" }
   - name: "Online Training"
     label: "Online Training"
     folder: "content/online-training"
@@ -119,6 +163,11 @@ collections:
           hint: "title of node",
         }
       - { label: "training-content", name: "body", widget: "markdown" }
+      - {
+          label: "training-content-es",
+          name: "es-translate",
+          widget: "markdown",
+        }
   - name: "News"
     label: "News"
     folder: "content/news"
@@ -135,6 +184,7 @@ collections:
           hint: "title of node",
         }
       - { label: "news-content", name: "body", widget: "markdown" }
+      - { label: "news-content-es", name: "es-translate", widget: "markdown" }
   - name: "Products"
     label: "Products"
     folder: "content/products"
@@ -151,7 +201,6 @@ collections:
           hint: "title of node",
         }
       - { label: "product-name", name: "string", widget: "string" }
-      - { label: "product-price", name: "text", widget: "string" }
       - {
           label: "product-sale",
           name: "number",
