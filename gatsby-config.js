@@ -29,98 +29,98 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/home-es`,
+        path: `${__dirname}/content/home-es/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/about`,
+        path: `${__dirname}/content/about/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/about-es`,
+        path: `${__dirname}/content/about-es/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/courses`,
+        path: `${__dirname}/content/courses/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/courses-es`,
+        path: `${__dirname}/content/courses-es/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/faq`,
+        path: `${__dirname}/content/faq/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/news`,
+        path: `${__dirname}/content/news/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/news-es`,
+        path: `${__dirname}/content/news-es/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/register`,
+        path: `${__dirname}/content/register/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/products`,
+        path: `${__dirname}/content/products/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/drivers-improvement`,
+        path: `${__dirname}/content/drivers-improvement/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/drivers-improvement-es`,
+        path: `${__dirname}/content/drivers-improvement-es/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/online-training`,
+        path: `${__dirname}/content/online-training/`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/online-training-es`,
+        path: `${__dirname}/content/online-training-es/`,
         name: `markdown-pages`,
       },
     },
