@@ -217,7 +217,7 @@ export default props => (
       </div>
       <div className="section">
         <h3>{props.termsTitle}</h3>
-        {props.agreement}
+        <div dangerouslySetInnerHTML={{ __html: props.agreement }} />
       </div>
       <div>
         <input type="text" name="signature" id="signature" required />
@@ -236,14 +236,6 @@ export default props => (
         value={props.registrationSubmit}
       />
       <input className="btn" type="reset" value={props.eraserSubmit} />
-    </div>
-    <div className="section">
-      <small>
-        DMV is committed to promoting transportation safety through the
-        certification of quality driver training programs. If you have comments
-        or concerns about this course, call our toll-free number: 1-877-885-5790
-        or email dmvclu@dmv.virginia.com (2/2020)
-      </small>
     </div>
   </form>
 )

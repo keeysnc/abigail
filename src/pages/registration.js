@@ -22,17 +22,15 @@ const Registration = ({ intl }) => {
           }
         }
       }
-      form: markdownRemark(fileAbsolutePath: {regex: "/form/"}) {
+      form: markdownRemark(fileAbsolutePath: { regex: "/form/" }) {
         html
       }
-    }
-      formEs: markdownRemark(fileAbsolutePath: {regex: "/fTranslate/"}) {
+      formEs: markdownRemark(fileAbsolutePath: { regex: "/fTranslate/" }) {
         html
       }
-    }
     }
   `)
-
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <CardRender
@@ -46,7 +44,7 @@ const Registration = ({ intl }) => {
       />
 
       <Form
-        agreement={data.form.html}
+        agreement={path.match("/en/") ? data.form.html : data.formEs.html}
         courseTitle={intl.formatMessage({ id: "registration.course_title" })}
         courseInfoTitle={intl.formatMessage({
           id: "registration.student_info_title",
