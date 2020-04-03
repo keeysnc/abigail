@@ -21,8 +21,19 @@ const DriversImprovement = ({ intl }) => {
         id
         html
       }
+      driversImpEs: markdownRemark(
+        fileAbsolutePath: { regex: "/mejora-de-conductores/" }
+      ) {
+        frontmatter {
+          title
+          string
+        }
+        id
+        html
+      }
     }
   `)
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <SEO
@@ -35,8 +46,14 @@ const DriversImprovement = ({ intl }) => {
       />
       <HorizontalRule />
       <CourseInfo
-        message={data.driversImp.html}
-        title={data.driversImp.frontmatter.string}
+        message={
+          path.match("/en/") ? data.driversImp.html : data.driversImpEs.html
+        }
+        title={
+          path.match("/en/")
+            ? data.driversImp.frontmatter.string
+            : data.driversImpEs.frontmatter.string
+        }
       />
     </Layout>
   )

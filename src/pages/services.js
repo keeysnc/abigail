@@ -23,7 +23,7 @@ const Services = ({ intl }) => {
         }
       }
       coursesEs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/courses-es/" } }
+        filter: { fileAbsolutePath: { regex: "/cursos/" } }
       ) {
         nodes {
           fileAbsolutePath

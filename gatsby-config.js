@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/home-es/`,
+        path: `${__dirname}/content/hogar/`,
         name: `markdown-pages`,
       },
     },
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/about-es/`,
+        path: `${__dirname}/content/acerca-de/`,
         name: `markdown-pages`,
       },
     },
@@ -57,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/courses-es/`,
+        path: `${__dirname}/content/cursos/`,
         name: `markdown-pages`,
       },
     },
@@ -71,6 +71,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/entrenamiento-en-linea/`,
+        name: `markdown-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/news/`,
         name: `markdown-pages`,
       },
@@ -78,7 +85,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/news-es/`,
+        path: `${__dirname}/content/noticias/`,
         name: `markdown-pages`,
       },
     },
@@ -106,7 +113,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/drivers-improvement-es/`,
+        path: `${__dirname}/content/mejora-de-conductores/`,
         name: `markdown-pages`,
       },
     },
@@ -120,7 +127,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/online-training-es/`,
+        path: `${__dirname}/content/entrenamiento-en-linea/`,
         name: `markdown-pages`,
       },
     },

@@ -24,7 +24,7 @@ collections:
       - { label: "home-content", name: "body", widget: "markdown" }
   - name: "Hogar"
     label: "Hogar"
-    folder: "content/home-es"
+    folder: "content/hogar"
     create: true
     delete: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -56,7 +56,7 @@ collections:
       - { label: "about-content", name: "body", widget: "markdown" }
   - name: "Acerca de"
     label: "Acerca de"
-    folder: "content/about-es"
+    folder: "content/acerca-de"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -89,7 +89,7 @@ collections:
       - { label: "improvement-content", name: "body", widget: "markdown" }
   - name: "Mejora de conductores"
     label: "Mejora de conductores"
-    folder: "content/drivers-improvement-es"
+    folder: "content/mejora-de-conductores"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -130,7 +130,7 @@ collections:
       - { label: "description", name: "body", widget: "markdown" }
   - name: "Cursos"
     label: "Cursos"
-    folder: "content/courses-es"
+    folder: "content/cursos"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -181,6 +181,26 @@ collections:
           hint: "title of node",
         }
       - { label: "faq-content", name: "body", widget: "markdown" }
+  - name: "Preguntas Frecuentes"
+    label: "Preguntas Frecuentes"
+    folder: "content/preguntas-frecuentes"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - {
+          label: "preguntas-frecuentes-content",
+          name: "body",
+          widget: "markdown",
+        }
   - name: "Online Training"
     label: "Online Training"
     folder: "content/online-training"
@@ -199,7 +219,7 @@ collections:
       - { label: "training-content", name: "body", widget: "markdown" }
   - name: "Entrenamiento en linea"
     label: "Entrenamiento en linea"
-    folder: "content/online-training-es"
+    folder: "content/entrenamiento-en-linea"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
@@ -235,7 +255,7 @@ collections:
       - { label: "news-content", name: "body", widget: "markdown" }
   - name: "Noticias"
     label: "Noticias"
-    folder: "content/news-es"
+    folder: "content/noticias"
     delete: true
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"

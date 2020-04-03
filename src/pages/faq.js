@@ -15,14 +15,24 @@ const Faq = ({ intl }) => {
         id
         html
       }
+      faqEs: markdownRemark(
+        fileAbsolutePath: { regex: "/preguntas-frecuentes/" }
+      ) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
     }
   `)
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "faq.title" })} />
       <Paragraph
         title={intl.formatMessage({ id: "faq.pagetitle" })}
-        message={data.faq.html}
+        message={path.match("/en/") ? data.faq.html : data.faqEs.html}
       />
     </Layout>
   )

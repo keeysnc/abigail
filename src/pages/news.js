@@ -15,8 +15,16 @@ const News = ({ intl }) => {
         id
         html
       }
+      newsEs: markdownRemark(fileAbsolutePath: { regex: "/noticias/" }) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
     }
   `)
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <SEO
@@ -25,7 +33,7 @@ const News = ({ intl }) => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "news.title" })}
-        message={data.news.html}
+        message={path.match("/en/") ? data.news.html : data.newsEs.html}
       />
     </Layout>
   )

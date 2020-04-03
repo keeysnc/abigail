@@ -16,7 +16,7 @@ const About = ({ intl }) => {
         id
         html
       }
-      aboutEs: markdownRemark(fileAbsolutePath: { regex: "/about-es/" }) {
+      aboutEs: markdownRemark(fileAbsolutePath: { regex: "/acerca-de/" }) {
         frontmatter {
           title
         }

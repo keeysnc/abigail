@@ -18,8 +18,18 @@ const Training = ({ intl }) => {
         id
         html
       }
+      trainingEs: markdownRemark(
+        fileAbsolutePath: { regex: "/entrenamiento-en-linea/" }
+      ) {
+        frontmatter {
+          title
+        }
+        id
+        html
+      }
     }
   `)
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "faq.title" })} />
@@ -29,7 +39,7 @@ const Training = ({ intl }) => {
       />
       <Paragraph
         title={intl.formatMessage({ id: "training.pagetitle" })}
-        message={data.training.html}
+        message={path.match("/en/") ? data.training.html : data.trainingEs.html}
       />
     </Layout>
   )
