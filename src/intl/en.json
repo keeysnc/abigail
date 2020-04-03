@@ -80,7 +80,13 @@
   "registration": {
     "title": "Abigail's Driving School - Register",
     "pagetitle": "Register Today",
-    "message": "Fill Out Our Application"
+    "message": "Fill Out Our Application",
+    "course_title": "Courses",
+    "student_info_title": "Student Info",
+    "payment_option_title": "Payment Options",
+    "terms_title": "Terms and Agreements",
+    "registration_submit": "SUBMIT APPLICATION",
+    "eraser_submit": "ERASER"
   },
   "training": {
     "title": "Abigail's Driving School - Training",

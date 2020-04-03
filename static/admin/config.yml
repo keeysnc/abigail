@@ -292,3 +292,35 @@ collections:
           widget: "number",
           required: false,
         }
+  - name: "Form"
+    label: "Form"
+    folder: "content/form"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "form-content", name: "body", widget: "markdown" }
+  - name: "fTranslate"
+    label: "fTranslate"
+    folder: "content/fTranslate"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Title-es",
+          name: "title-es",
+          widget: "string",
+          hint: "title of node",
+        }
+      - { label: "f-translate-content", name: "body", widget: "markdown" }

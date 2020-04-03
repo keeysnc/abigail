@@ -78,9 +78,15 @@
     }
   },
   "registration": {
-    "title": "Abigail's Driving School - Register",
+    "title": "Abigail's Driving School - Registrarse",
     "pagetitle": "Regístrese hoy",
-    "message": "Complete nuestra solicitud"
+    "message": "Complete nuestra solicitud",
+    "course_title": "Cursos",
+    "student_info_title": "Información del estudiante",
+    "payment_option_title": "Opciones de pago",
+    "terms_title": "Términos y acuerdos",
+    "registration_submit": "PRESENTAR LA SOLICITUD",
+    "eraser_submit": "lIMPIAR TODO"
   },
   "training": {
     "title": "Abigail's Driving School - Training",

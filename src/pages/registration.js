@@ -1,6 +1,5 @@
 import React from "react"
-import { injectIntl } from "gatsby-plugin-intl"
-
+import { injectIntl, useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Form from "../components/form"
@@ -23,6 +22,14 @@ const Registration = ({ intl }) => {
           }
         }
       }
+      form: markdownRemark(fileAbsolutePath: {regex: "/form/"}) {
+        html
+      }
+    }
+      formEs: markdownRemark(fileAbsolutePath: {regex: "/fTranslate/"}) {
+        html
+      }
+    }
     }
   `)
 
@@ -39,6 +46,19 @@ const Registration = ({ intl }) => {
       />
 
       <Form
+        agreement={data.form.html}
+        courseTitle={intl.formatMessage({ id: "registration.course_title" })}
+        courseInfoTitle={intl.formatMessage({
+          id: "registration.student_info_title",
+        })}
+        coursePaymentOptionTitle={intl.formatMessage({
+          id: "registration.payment_option_title",
+        })}
+        termsTitle={intl.formatMessage({ id: "registration.terms_title" })}
+        registrationSubmit={intl.formatMessage({
+          id: "registration.registration_submit",
+        })}
+        eraserSubmit={intl.formatMessage({ id: "registration.eraser_submit" })}
         productOne={[
           data.products.nodes[0].frontmatter.string,
           data.products.nodes[0].frontmatter.text,
