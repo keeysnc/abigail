@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 50px;
   height: 100vh;
+  opacity: 0;
 }
 
 .hero::before {

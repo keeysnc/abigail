@@ -1,11 +1,43 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import Slider from "react-slick"
+import { TweenMax, TimelineLite, TimelineMax, Power3 } from "gsap"
+import ScrollMagic from "scrollmagic"
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "./slider.css"
 
 const SimpleSlider = props => {
+  let tl4 = new TimelineMax()
+  let controller = new ScrollMagic.Controller()
+  let testimonial = useRef(null)
+  ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax)
+  useEffect(() => {
+    const testimonialTitle = testimonial.children[0]
+    const testimonialText = testimonial.children[1]
+    TweenMax.to(testimonialTitle, 0, { css: { visibility: "visible" } })
+    TweenMax.to(testimonialText, 0, { css: { visibility: "visible" } })
+
+    tl4.staggerFrom(
+      [testimonialTitle, testimonialText],
+      1.5,
+      {
+        y: 75,
+        opacity: "0",
+        ease: Power3.easeOut,
+      },
+      0.2
+    )
+
+    const scene = new ScrollMagic.Scene({
+      triggerElement: "#stage",
+      triggerHook: 0.5,
+    })
+      .setTween(tl4)
+      .addTo(controller)
+  })
+
   const intl = useIntl()
   var settings = {
     dots: true,
@@ -15,7 +47,11 @@ const SimpleSlider = props => {
     slidesToScroll: 1,
   }
   return (
-    <div class="slider-render section text-width">
+    <div
+      id="stage"
+      class="slider-render section text-width"
+      ref={el => (testimonial = el)}
+    >
       <h1>{props.title}</h1>
       <Slider {...settings}>
         <div>
