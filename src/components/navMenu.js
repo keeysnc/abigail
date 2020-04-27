@@ -12,6 +12,9 @@ const NavMenu = props => (
     <Link to="/registration">{props.registration}</Link>
     <Link to="/faq">{props.faq}</Link>
     <Link to="/online-training">{props.training}</Link>
+    <Link className="btn" to="/news">
+      News
+    </Link>
   </div>
 )
 

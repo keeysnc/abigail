@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Form from "../components/form"
 import CardRender from "../components/CardRender"
-import HorizontalRule from "../components/HorizontalRule"
 import { useStaticQuery } from "gatsby"
 
 const Registration = ({ intl }) => {
@@ -37,7 +36,6 @@ const Registration = ({ intl }) => {
         pagetitle={intl.formatMessage({ id: "registration.pagetitle" })}
         message={intl.formatMessage({ id: "registration.message" })}
       />
-      <HorizontalRule />
       <SEO
         lang={intl.locale}
         title={intl.formatMessage({ id: "registration.title" })}

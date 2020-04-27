@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CardRender from "../components/CardRender"
 import CourseInfo from "../components/CourseInfo"
-import HorizontalRule from "../components/HorizontalRule"
 
 const DriversImprovement = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -44,8 +43,8 @@ const DriversImprovement = ({ intl }) => {
         pagetitle={intl.formatMessage({ id: "drivers_improvement.pagetitle" })}
         message={intl.formatMessage({ id: "drivers_improvement.message" })}
       />
-      <HorizontalRule />
       <CourseInfo
+        style={{ marginBottom: "50px" }}
         message={
           path.match("/en/") ? data.driversImp.html : data.driversImpEs.html
         }

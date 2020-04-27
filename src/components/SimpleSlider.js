@@ -1,58 +1,22 @@
-import React, { useRef, useEffect } from "react"
+import React from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import Slider from "react-slick"
-import { TweenMax, TimelineLite, TimelineMax, Power3 } from "gsap"
-import ScrollMagic from "scrollmagic"
-import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "./slider.css"
 
 const SimpleSlider = props => {
-  let tl4 = new TimelineMax()
-  let controller = new ScrollMagic.Controller()
-  let testimonial = useRef(null)
-  ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax)
-  useEffect(() => {
-    const testimonialTitle = testimonial.children[0]
-    const testimonialText = testimonial.children[1]
-    TweenMax.to(testimonialTitle, 0, { css: { visibility: "visible" } })
-    TweenMax.to(testimonialText, 0, { css: { visibility: "visible" } })
-
-    tl4.staggerFrom(
-      [testimonialTitle, testimonialText],
-      1.5,
-      {
-        y: 75,
-        opacity: "0",
-        ease: Power3.easeOut,
-      },
-      0.2
-    )
-
-    const scene = new ScrollMagic.Scene({
-      triggerElement: "#stage",
-      triggerHook: 0.5,
-    })
-      .setTween(tl4)
-      .addTo(controller)
-  })
-
   const intl = useIntl()
   var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    duration: 500,
+    height: 400,
+    indicators: true,
+    interval: 6000,
   }
   return (
-    <div
-      id="stage"
-      class="slider-render section text-width"
-      ref={el => (testimonial = el)}
-    >
-      <h1>{props.title}</h1>
+    <div class="slider-render section">
+      <h3>{props.title}</h3>
+      <div className="btn">VIEW MORE</div>
       <Slider {...settings}>
         <div>
           <div className="testimonial">
@@ -128,26 +92,6 @@ const SimpleSlider = props => {
             him. Thank you so much friend, you're the best."
           </p>
           <small>-- NyTasha S.</small>
-        </div>
-        <div>
-          <p>
-            "The instructor was professional yet friendly and worked with my
-            busy schedule so I could complete the course as an adult driver. He
-            ensured I knew the material before moving forward-some of which I
-            was not aware of as a foreigner and proved to be very helpful with
-            regards to road safety. Thank you for all your help!"
-          </p>
-          <small>-- Lucy W.</small>
-        </div>
-        <div>
-          <p>
-            "The instructor was professional yet friendly and worked with my
-            busy schedule so I could complete the course as an adult driver. He
-            ensured I knew the material before moving forward-some of which I
-            was not aware of as a foreigner and proved to be very helpful with
-            regards to road safety. Thank you for all your help!"
-          </p>
-          <small>-- Lucy W.</small>
         </div>
         <div>
           <p>

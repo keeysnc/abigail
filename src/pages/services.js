@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CardRender from "../components/CardRender"
 import CourseInfo from "../components/CourseInfo"
-import HorizontalRule from "../components/HorizontalRule"
 import Accordion from "../components/Accordion"
 
 const Services = ({ intl }) => {
@@ -46,7 +45,6 @@ const Services = ({ intl }) => {
         pagetitle={intl.formatMessage({ id: "services.pagetitle" })}
         message={intl.formatMessage({ id: "services.message" })}
       />
-      <HorizontalRule />
       <Accordion>
         <div
           label={

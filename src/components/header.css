@@ -1,6 +1,8 @@
 header {
   background: transparent;
   margin-bottom: 1.45rem;
+  position: relative;
+  z-index: 99;
 }
 
 .nav-container {
@@ -9,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 1.45rem 1.0875rem;
+  padding: 1rem 0 0.8rem 0;
 }
 
 .nav-container a {
@@ -21,12 +23,10 @@ header {
 }
 
 .translate a {
-  color: #414042;
-}
-
-.translate div a {
-  font-size: medium;
+  font-size: 12px;
+  font-weight: bold;
   margin-right: auto;
+  color: #01b37b;
 }
 
 .logo {

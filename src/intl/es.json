@@ -1,13 +1,13 @@
 {
   "home": {
     "menu_items": {
-      "home": "Portada",
-      "about": "Sobre Nosotros",
-      "services": "Servicios",
-      "drivers_imp": "Mejora de conductores",
-      "registration": "Registro",
-      "faq": "Preguntas",
-      "training": "Formación"
+      "home": "PORTADA",
+      "about": "SOBRE NOSOTROS",
+      "services": "SERVICIOS",
+      "drivers_imp": "MEJORA DE CONDUCTORES",
+      "registration": "REGISTRO",
+      "faq": "PREGUNTAS",
+      "training": "FORMACION"
     },
     "herotitle": "El único proveedor de escuela de manejo en inglés y español en el área metropolitana de Richmond",
     "title": "Abigail's Driving School",

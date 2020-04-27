@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
 import SimpleSlider from "../components/SimpleSlider"
-import HorizontalRule from "../components/HorizontalRule"
+import SideBar from "../components/Sidebar"
 
 const IndexPage = () => {
   const intl = useIntl()
@@ -42,23 +42,32 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero herotitle={intl.formatMessage({ id: "home.herotitle" })} />
-      <HorizontalRule altColor={false} />
       <SEO
         lang={intl.locale}
         title={intl.formatMessage({ id: "home.title" })}
-        keywords={[`gatsby`, `application`, `react`]}
+        keywords={[`driving school`, `richmond virginia`, `drivers education`]}
       />
-      <Paragraph
-        title={intl.formatMessage({ id: "home.pagetitle" })}
-        message={path.match("/en/") ? data.home.html : data.homeEs.html}
-      />
-      <Image visual={data.accreditedLogo.childImageSharp.fixed} />
-      <HorizontalRule altColor={false} />
-      <SimpleSlider
-        title={intl.formatMessage({
-          id: "home.testimonials.testimonial_title",
-        })}
-      />
+      <div className="brand-section">
+        <div className="row side" style={{ display: "flex" }}>
+          <div class="col s12 m12 l5">
+            <Paragraph
+              title={intl.formatMessage({ id: "home.pagetitle" })}
+              message={path.match("/en/") ? data.home.html : data.homeEs.html}
+            />
+            <Image visual={data.accreditedLogo.childImageSharp.fixed} />
+            <SimpleSlider
+              title={intl.formatMessage({
+                id: "home.testimonials.testimonial_title",
+              })}
+            />
+          </div>
+          <div class="col l5 m12 s12">
+            <div className="cta-sidebar">
+              <SideBar />
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

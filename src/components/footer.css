@@ -1,18 +1,10 @@
-.footer-render {
-  background: #414042 !important;
-}
-
 footer .page-footer {
-  background: #414042 !important;
+  background: #00353f !important;
+  border-top: 8px solid #01b37b;
 }
 
-footer .contact-list {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-}
-
-footer .contact-list li {
-  padding-bottom: 20px;
+footer .contact-list b {
+  font-weight: 600 !important;
 }
 
 footer .contact-list a {
@@ -26,8 +18,25 @@ footer .social-media {
 
 footer .social-media li {
   padding-right: 20px;
+  list-style: none;
 }
 
-footer .page-footer .col {
+footer .page-footer .container > .row {
+  padding-top: 50px !important;
+}
+
+footer .row .col .l4 {
   width: 100% !important;
+}
+
+@media only screen and (min-width: 993px) {
+  footer .row .col.offset-l2 {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  footer .row .col.l4 {
+    width: 50%;
+  }
 }

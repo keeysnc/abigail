@@ -12,7 +12,6 @@ class Accordion extends Component {
     super(props)
 
     const openSections = {}
-
     this.state = { openSections }
   }
 
@@ -39,7 +38,7 @@ class Accordion extends Component {
 
     return (
       <div className="section">
-        <div style={{ padding: "3rem", background: "white" }}>
+        <div>
           {children.map(child => (
             <AccordionSection
               isOpen={!!openSections[child.props.label]}

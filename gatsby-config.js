@@ -157,6 +157,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
@@ -179,7 +180,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Roboto:900,700,400", "Open Sans"],
+          families: ["Oswald:300,500,600", "Open Sans:300,600"],
         },
       },
     },

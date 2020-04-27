@@ -1,13 +1,13 @@
 {
   "home": {
     "menu_items": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "drivers_imp": "Drivers Improvement",
-      "registration": "Registration",
+      "home": "HOME",
+      "about": "ABOUT",
+      "services": "SERVICES",
+      "drivers_imp": "DRIVERS IMPROVEMENT",
+      "registration": "REGISTRATION",
       "faq": "FAQ",
-      "training": "Online Training"
+      "training": "ONLINE TRAINING"
     },
     "herotitle": "The only English and Spanish language driving school provider in the Richmond Metropolitan area",
     "title": "Abigail's Driving School - English",
