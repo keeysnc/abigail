@@ -32,3 +32,15 @@ header {
 .logo {
   width: 200px;
 }
+
+.mobile-menu {
+  display: block !important;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 1150px) {
+  .logo {
+    width: 130px;
+  }
+}

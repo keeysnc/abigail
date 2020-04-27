@@ -324,3 +324,19 @@ collections:
           hint: "title of node",
         }
       - { label: "f-translate-content", name: "body", widget: "markdown" }
+  - name: "Footer"
+    label: "Footer"
+    folder: "content/footer"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "English Phone Number",
+          name: "phone",
+          widget: "string",
+          hint: "phone number",
+        }
+      - { label: "Spanish Phone Number", name: "string", widget: "string" }
