@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Paragraph from "../components/paragraphSection"
 import SimpleSlider from "../components/SimpleSlider"
-import SideBar from "../components/Sidebar"
+import SideBar from "../components/SideBar"
 
 const IndexPage = () => {
   const intl = useIntl()
