@@ -333,10 +333,6 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: "English Phone Number",
-          name: "phone",
-          widget: "string",
-          hint: "phone number",
-        }
-      - { label: "Spanish Phone Number", name: "string", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "English Phone Number", name: "en-phone", widget: "string" }
+      - { label: "Spanish Phone Number", name: "es-phone", widget: "string" }

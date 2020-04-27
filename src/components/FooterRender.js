@@ -7,6 +7,7 @@ const FooterRender = ({ intl }) => {
   const footerStyles = {
     color: "#50E3C2",
   }
+
   return (
     <div className="footer-render">
       <Footer
