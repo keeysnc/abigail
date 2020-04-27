@@ -36,6 +36,7 @@ const Layout = ({ children, intl }) => {
     <>
       {/* <nav style={{ background: "gray" }}>
         {" "}
+        
         <button className="btn" onClick={() => setDialog(true)}>
           {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
         </button>
