@@ -141,13 +141,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/footer`,
-        name: `markdown-pages`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/content/fTranslate/`,
         name: `markdown-pages`,
       },
