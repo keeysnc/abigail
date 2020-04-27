@@ -34,7 +34,7 @@ const CardRender = props => {
             }}
           >
             <h3>{props.pagetitle}</h3>
-            <p>{props.message}</p>
+            <p> {props.message}</p>
           </Col>
           <Col m={8} s={12} style={{ padding: "0", lineHeight: "0" }}>
             <img
