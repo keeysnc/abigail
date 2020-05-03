@@ -8,6 +8,10 @@
   right: 0;
 }
 
+.cta-sidebar a {
+  color: white !important;
+}
+
 .cta-sidebar::before {
   position: absolute;
   content: "";
@@ -19,6 +23,7 @@
   width: 135%;
   background: #01b37b;
   z-index: -1;
+  box-shadow: black -3px 1px 19px -10px !important;
 }
 
 .cta-sidebar h3 {

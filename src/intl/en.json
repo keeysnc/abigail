@@ -14,6 +14,10 @@
     "description": "Breaking Down Driver's Education In Spanish and English",
     "author": "@wiziple",
     "pagetitle": "Our Mission",
+    "sidebar": {
+      "title": "REGISTER TODAY!",
+      "message": "We break down driver's education in Spanish and English. Fill out our application and get started!"
+    },
     "mission": "Vision: To become a household name in Virginia by ensuring each student can drive safely drive out on the streets and the in real world while facing different variable and dangers from their surrounding environment. Mission: To provide a learning friendly environment that consists of decreasing anxiety through practice, reinforcement and achieving customized goals.",
     "testimonials": {
       "testimonial_title": "Testimonials",
@@ -99,8 +103,8 @@
   },
   "contact": {
     "contact": "Contact",
-    "phone": "Phone",
-    "mobile": "Mobile",
+    "enPhone": "English",
+    "esPhone": "Spanish",
     "email": "Email",
     "hours": "Hours",
     "contact_hours": "Customer Contact Hours",

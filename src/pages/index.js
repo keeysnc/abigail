@@ -6,9 +6,9 @@ import "materialize-css/dist/css/materialize.min.css"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import SideBar from "../components/SideBar"
 import Paragraph from "../components/paragraphSection"
 import SimpleSlider from "../components/SimpleSlider"
-import SideBar from "../components/SideBar"
 
 const IndexPage = () => {
   const intl = useIntl()
@@ -63,7 +63,14 @@ const IndexPage = () => {
           </div>
           <div class="col l5 m12 s12">
             <div className="cta-sidebar">
-              <SideBar />
+              <SideBar
+                title={intl.formatMessage({
+                  id: "home.sidebar.title",
+                })}
+                message={intl.formatMessage({
+                  id: "home.sidebar.message",
+                })}
+              />
             </div>
           </div>
         </div>

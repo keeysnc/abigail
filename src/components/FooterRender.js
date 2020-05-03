@@ -1,12 +1,24 @@
 import React from "react"
 import { Footer } from "react-materialize"
 import { injectIntl } from "gatsby-plugin-intl"
+import { useStaticQuery, graphql } from "gatsby"
 import "./footer.css"
 
-const FooterRender = ({ intl }) => {
+const FooterRender = ({ props, intl }) => {
   const footerStyles = {
     color: "#50E3C2",
   }
+
+  const data = useStaticQuery(graphql`
+    query {
+      phone: markdownRemark(fileAbsolutePath: { regex: "/footer/" }) {
+        frontmatter {
+          en_phone
+          es_phone
+        }
+      }
+    }
+  `)
 
   return (
     <div className="footer-render">
@@ -28,15 +40,19 @@ const FooterRender = ({ intl }) => {
             <ul className="contact-list">
               <li>
                 <span>
-                  <b>{intl.formatMessage({ id: "contact.phone" })}: </b>
+                  <b>{intl.formatMessage({ id: "contact.enPhone" })}: </b>
                 </span>
-                <a href="tel:8042563147">804-256-3147</a>
+                <a href={`tel: ${data.phone.frontmatter.en_phone}`}>
+                  {data.phone.frontmatter.en_phone}
+                </a>
               </li>
               <li>
                 <span>
-                  <b>{intl.formatMessage({ id: "contact.mobile" })}: </b>
+                  <b>{intl.formatMessage({ id: "contact.esPhone" })}: </b>
                 </span>
-                <a href="tel:8042563147">804-256-3147</a>
+                <a href={`tel:${data.phone.frontmatter.en_phone}`}>
+                  {data.phone.frontmatter.en_phone}
+                </a>
               </li>
               <li>
                 <span>

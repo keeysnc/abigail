@@ -14,6 +14,10 @@
     "description": "Desglosando la educación del conductor en español e inglés",
     "author": "likewaterdesignco",
     "pagetitle": "Nuestra misión",
+    "sidebar": {
+      "title": "REGÍSTRESE HOY!",
+      "message": "Desglosamos la educación del conductor en inglés y español. ¡Complete nuestra solicitud y comience!"
+    },
     "mission": "Vision: To become a household name in Virginia by ensuring each student can drive safely drive out on the streets and the in real world while facing different variable and dangers from their surrounding environment. Mission: To provide a learning friendly environment that consists of decreasing anxiety through practice, reinforcement and achieving customized goals.",
     "testimonials": {
       "testimonial_title": "Testimonios",
@@ -99,8 +103,8 @@
   },
   "contact": {
     "contact": "Contacto",
-    "phone": "Número de Teléfono",
-    "mobile": "Teléfono Móvil",
+    "enPhone": "Inglés",
+    "esPhone": "Español",
     "email": "Email",
     "hours": "Horas",
     "contact_hours": "Horas de Contacto",

@@ -336,3 +336,4 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "English Phone Number", name: "en-phone", widget: "string" }
       - { label: "Spanish Phone Number", name: "es-phone", widget: "string" }
+      - { label: "Facebook link", name: "fb-link", widget: "string" }

@@ -10,7 +10,28 @@ import "../components/CardRender.css"
 const CardRender = props => {
   const data = useStaticQuery(graphql`
     query {
-      services: file(relativePath: { eq: "drivers-ed.png" }) {
+      servicesHero: file(relativePath: { eq: "service-hero.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      driversEdHero: file(relativePath: { eq: "driver-improvement-hero.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      registrationHero: file(relativePath: { eq: "registration-hero.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      trainingHero: file(relativePath: { eq: "training-hero.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -19,6 +40,22 @@ const CardRender = props => {
       }
     }
   `)
+
+  // render variable based on the path matching the page routes
+  const path = typeof window !== "undefined" ? window.location.pathname : ""
+  let heroImg
+
+  if (path.match("/services")) {
+    heroImg = data.servicesHero.childImageSharp.fluid.src
+  } else if (path.match("/drivers-improvement")) {
+    heroImg = data.driversEdHero.childImageSharp.fluid.src
+  } else if (path.match("/registration")) {
+    heroImg = data.registrationHero.childImageSharp.fluid.src
+  } else if (path.match("/online-training")) {
+    heroImg = data.trainingHero.childImageSharp.fluid.src
+  } else {
+    heroImg = data.servicesHero.childImageSharp.fluid.src
+  }
 
   return (
     <div className="section card-hero">
@@ -43,7 +80,7 @@ const CardRender = props => {
                 height: "100%",
                 objectFit: "cover",
               }}
-              src={data.services.childImageSharp.fluid.src}
+              src={heroImg}
             ></img>
           </Col>
           <Col
