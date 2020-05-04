@@ -16,7 +16,12 @@ const SimpleSlider = props => {
   return (
     <div class="slider-render section">
       <h3>{props.title}</h3>
-      <div className="btn">VIEW MORE</div>
+      <a
+        href="https://www.yelp.com/biz/abigails-driving-school-richmond"
+        target="_blank"
+      >
+        <div className="btn">VIEW MORE</div>
+      </a>
       <Slider {...settings}>
         <div>
           <div className="testimonial">

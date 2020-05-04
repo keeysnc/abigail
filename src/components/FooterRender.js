@@ -11,10 +11,12 @@ const FooterRender = ({ props, intl }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      phone: markdownRemark(fileAbsolutePath: { regex: "/footer/" }) {
+      footer: markdownRemark(fileAbsolutePath: { regex: "/footer/" }) {
         frontmatter {
           en_phone
           es_phone
+          contact_hours
+          fb_link
         }
       }
     }
@@ -23,7 +25,7 @@ const FooterRender = ({ props, intl }) => {
   return (
     <div className="footer-render">
       <Footer
-        copyrights={`Build with ♥ by Like Water Design Studio - Copyright ${new Date().getFullYear()}`}
+        copyrights={`Built by Like Water Design Studio - Copyright ${new Date().getFullYear()}`}
         links={
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111489.18005525714!2d-77.53977893371655!3d37.668487607253354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b116c99d0dc009%3A0xf22a5fe2a8ee0f76!2sAbigail&#39;s%20Driving%20School!5e0!3m2!1sen!2sus!4v1585315330517!5m2!1sen!2sus"
@@ -42,16 +44,16 @@ const FooterRender = ({ props, intl }) => {
                 <span>
                   <b>{intl.formatMessage({ id: "contact.enPhone" })}: </b>
                 </span>
-                <a href={`tel: ${data.phone.frontmatter.en_phone}`}>
-                  {data.phone.frontmatter.en_phone}
+                <a href={`tel: ${data.footer.frontmatter.en_phone}`}>
+                  {data.footer.frontmatter.en_phone}
                 </a>
               </li>
               <li>
                 <span>
                   <b>{intl.formatMessage({ id: "contact.esPhone" })}: </b>
                 </span>
-                <a href={`tel:${data.phone.frontmatter.en_phone}`}>
-                  {data.phone.frontmatter.en_phone}
+                <a href={`tel:${data.footer.frontmatter.en_phone}`}>
+                  {data.footer.frontmatter.en_phone}
                 </a>
               </li>
               <li>
@@ -70,12 +72,17 @@ const FooterRender = ({ props, intl }) => {
                 <span>
                   <b>{intl.formatMessage({ id: "contact.contact_hours" })}: </b>
                 </span>
-                24/7
+                {data.footer.contact_hours}
               </li>
             </ul>
             <div className="social-media">
               <li>
-                <a style={footerStyles} className="text-lighten-3" href="#!">
+                <a
+                  style={footerStyles}
+                  className="text-lighten-3"
+                  href={data.footer.frontmatter.fb_link}
+                  target="_blank"
+                >
                   <svg
                     fill="#50E3C2"
                     xmlns="http://www.w3.org/2000/svg"

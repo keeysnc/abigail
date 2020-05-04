@@ -29,6 +29,11 @@ footer .row .col .l4 {
   width: 100% !important;
 }
 
+footer .footer-copyright .container {
+  color: rgb(80, 227, 194);
+  font-size: small;
+}
+
 @media only screen and (min-width: 993px) {
   footer .row .col.offset-l2 {
     margin-left: auto;

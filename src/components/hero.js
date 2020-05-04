@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby-plugin-intl"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import "./hero.css"
@@ -21,7 +22,9 @@ const Hero = props => {
       <div className="hero-content container">
         <h1>Abigail's Driving School</h1>
         <h5>{props.herotitle}</h5>
-        <div className="btn hero-btn">ABOUT US</div>
+        <Link to="/about" className="btn hero-btn">
+          ABOUT US
+        </Link>
       </div>
       <BackgroundImage
         className="img-container"
