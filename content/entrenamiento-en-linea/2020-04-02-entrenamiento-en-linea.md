@@ -55,34 +55,22 @@ El día de la prueba, debe llevar lo siguiente al sitio de prueba:
 
  **Horas de prueba en línea:** 
 
-Lunes 9 am a 5 pm
-
-Martes 9 am a 5 pm
-
-Miércoles 9 am a 5 pm
-
-Jueves 9 am a 5 pm
-
-Viernes 9 am a 5 pm
-
-Sábado 8 am a 12 pm
-
-Domingo de 8 a.m. a 12 p.m.
+* Lunes 9 am a 5 pm
+* Martes 9 am a 5 pm
+* Miércoles 9 am a 5 pm
+* Jueves 9 am a 5 pm
+* Viernes 9 am a 5 pm
+* Sábado 8 am a 12 pm
+* Domingo de 8 a.m. a 12 p.m.
 
  **Horas de instrucción de prueba en línea:** 
 
-Lunes 9 am a 5 pm
-
-Martes 9 am a 5 pm
-
-Miércoles 9 am a 5 pm
-
-Jueves 9 am a 5 pm
-
-Viernes 9 am a 5 pm
-
-Sábado 8 am a 12 pm
-
-Domingo de 8 a.m. a 12 p.m.
+* Lunes 9 am a 5 pm
+* Martes 9 am a 5 pm
+* Miércoles 9 am a 5 pm
+* Jueves 9 am a 5 pm
+* Viernes 9 am a 5 pm
+* Sábado 8 am a 12 pm
+* Domingo de 8 a.m. a 12 p.m.
 
 “El DMV se compromete a promover la seguridad del transporte a través de la certificación de programas de capacitación para conductores de calidad. Si tiene comentarios o inquietudes sobre este curso, llame a nuestro número gratuito:  **1-877-885-5790**  ".
