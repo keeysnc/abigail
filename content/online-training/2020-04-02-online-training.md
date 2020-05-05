@@ -13,7 +13,7 @@ title: Online Training
 * You must be at least 15 years and 6 months old to take the online driver education course. All individuals who elect to take the classroom component of the driver education course online must take the online course through a DMV licensed driver training school. Homeschooled students are exempt from this requirement.
 * In order to benefit from the course, you must be able to work independently and be comfortable with using a computer.
 
-#### **Testing procedures:**
+#### Testing procedures:
 
 On the day of testing, you must bring the following to the test site:
 
@@ -41,7 +41,7 @@ On the day of testing, you must bring the following to the test site:
 
 *(if you cancel an online course after your login access to the course has been created a $42.00 processing fee will be charged from your refund request)*
 
-#### **Final Test Location and Hours:**
+#### Final Test Location and Hours:
 
 6002 W. Broad St. Suite 203, Richmond, VA 23230
 
