@@ -41,7 +41,7 @@ El día de la prueba, debe llevar lo siguiente al sitio de prueba:
 
 *(si cancela un curso en línea después de que se haya creado su acceso de inicio de sesión al curso, se le cobrará una tarifa de procesamiento de $ 42.00 por su solicitud de reembolso)* 
 
-####  **Ubicación y horario de la prueba final:** 
+#### **Ubicación y horario de la prueba final:**
 
 6002 W. Broad St. Suite 203, Richmond, VA 23230
 
