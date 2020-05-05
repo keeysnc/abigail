@@ -55,34 +55,22 @@ On the day of testing, you must bring the following to the test site:
 
 **Online Testing Hours:**
 
-Monday 9 am To 5 pm
-
-Tuesday 9 am To 5 pm
-
-Wednesday 9 am To 5 pm
-
-Thursday 9 am To 5 pm
-
-Friday 9 am To 5 pm
-
-Saturday 8 am To 12 pm
-
-Sunday 8 am To 12pm
+* Monday 9 am To 5 pm
+* Tuesday 9 am To 5 pm
+* Wednesday 9 am To 5 pm
+* Thursday 9 am To 5 pm
+* Friday 9 am To 5 pm
+* Saturday 8 am To 12 pm
+* Sunday 8 am To 12pm
 
 **Online Testing Instruction Hours:**
 
-Monday 9 am To 5 pm
-
-Tuesday 9 am To 5 pm
-
-Wednesday 9 am To 5 pm
-
-Thursday 9 am To 5 pm
-
-Friday 9 am To 5 pm
-
-Saturday 8 am To 12 pm
-
-Sunday 8 am To 12pm
+* Monday 9 am To 5 pm
+* Tuesday 9 am To 5 pm
+* Wednesday 9 am To 5 pm
+* Thursday 9 am To 5 pm
+* Friday 9 am To 5 pm
+* Saturday 8 am To 12 pm
+* Sunday 8 am To 12pm
 
 “DMV is committed to promoting transportation safety through the certification of quality driver training programs. If you have comments or concerns about this course, call our toll-free number: **1-877-885-5790**.”
