@@ -32,6 +32,10 @@ h3 {
   color: #26a69a;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .section {
   position: relative;
   padding-bottom: 50px !important;
