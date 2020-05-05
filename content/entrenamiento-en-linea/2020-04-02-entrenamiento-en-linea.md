@@ -1,8 +1,6 @@
 ---
 title: Entrenamiento en linea
 ---
-
-
  **Bienvenido al curso de educación vial de Virginia** 
 
  **Soporte técnico: 800942 2050** 
@@ -15,7 +13,7 @@ title: Entrenamiento en linea
 * Debe tener al menos 15 años y 6 meses de edad para tomar el curso en línea de educación vial. Todas las personas que eligen tomar el componente de aula del curso de educación para conductores en línea deben tomar el curso en línea a través de una escuela de capacitación para conductores con licencia del DMV. Los estudiantes educados en el hogar están exentos de este requisito.
 * Para beneficiarse del curso, debe poder trabajar de forma independiente y sentirse cómodo con el uso de una computadora.
 
-####  **Procedimientos de prueba:** 
+#### Procedimientos de prueba:
 
 El día de la prueba, debe llevar lo siguiente al sitio de prueba:
 
@@ -33,8 +31,6 @@ El día de la prueba, debe llevar lo siguiente al sitio de prueba:
 4. La escuela de conducción de Abigail registra a cada estudiante a través de su portal exclusivo y hace clic en el  **botón de enviar**  para iniciar el proceso.
 5. El estudiante recibe inmediatamente un  **nombre de usuario, contraseña**  y  **enlace**  para ingresar al curso: <http://www.usdrivertraining.com/login-va.php>
 
-
-
 *Educación de conductores de Virginia aprobada por el Departamento de Educación. Aprobado por el estado: curso de educación en línea para conductores aprobado por el Departamento de Vehículos Motorizados de Virginia.* 
 
 1. El estudiante inicia sesión y comienza el curso en línea aprobado según las instrucciones.
@@ -45,9 +41,7 @@ El día de la prueba, debe llevar lo siguiente al sitio de prueba:
 
 *(si cancela un curso en línea después de que se haya creado su acceso de inicio de sesión al curso, se le cobrará una tarifa de procesamiento de $ 42.00 por su solicitud de reembolso)* 
 
-
-
- **Ubicación y horario de la prueba final:** 
+####  **Ubicación y horario de la prueba final:** 
 
 6002 W. Broad St. Suite 203, Richmond, VA 23230
 
