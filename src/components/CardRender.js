@@ -45,13 +45,13 @@ const CardRender = props => {
   const path = typeof window !== "undefined" ? window.location.pathname : ""
   let heroImg
 
-  if (path.match("/services")) {
+  if (path.match("/services.*")) {
     heroImg = data.servicesHero.childImageSharp.fluid.src
-  } else if (path.match("/drivers-improvement")) {
+  } else if (path.match("/drivers-improvement.*")) {
     heroImg = data.driversEdHero.childImageSharp.fluid.src
-  } else if (path.match("/registration")) {
+  } else if (path.match("/registration.*")) {
     heroImg = data.registrationHero.childImageSharp.fluid.src
-  } else if (path.match("/online-training")) {
+  } else if (path.match("/online-training.*")) {
     heroImg = data.trainingHero.childImageSharp.fluid.src
   } else {
     heroImg = data.servicesHero.childImageSharp.fluid.src

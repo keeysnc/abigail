@@ -7,3 +7,11 @@
   width: 280px;
   height: 60px;
 }
+
+.paragraph ul {
+  padding-inline-start: 40px !important;
+}
+
+.paragraph ul li {
+  list-style-type: disc !important;
+}
