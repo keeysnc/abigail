@@ -76,7 +76,7 @@
     height: 100vh;
     background: #00353f;
     z-index: 100;
-    position: fixed;
+    position: sticky;
     top: 0;
     -webkit-animation: mobileFadeIn 500ms ease-in-out; /* Safari 4+ */
     -moz-animation: mobileFadeIn 500ms ease-in-out; /* Fx 5+ */
@@ -102,7 +102,7 @@
     height: 100%;
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 20px;
   }
 
   .mobile-menu-container .nav-menu a {
@@ -150,5 +150,10 @@
   .mobile-menu-container .nav-menu a:last-child:after,
   .mobile-menu-container .nav-menu a:last-child:before {
     display: none !important;
+  }
+
+  .translate {
+    position: relative;
+    top: 0;
   }
 }

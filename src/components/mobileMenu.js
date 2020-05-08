@@ -2,6 +2,7 @@ import React from "react"
 import { useIntl } from "gatsby-plugin-intl"
 import { useStaticQuery, graphql } from "gatsby"
 import NavMenu from "./navMenu"
+import Language from "./language"
 import "./mobileMenu.css"
 
 const MobileMenu = props => {
@@ -43,6 +44,12 @@ const MobileMenu = props => {
             id: "home.menu_items.training",
           })}
         />
+        <div
+          style={{ marginTop: "10px" }}
+          className="translate show-on-med-and-down"
+        >
+          <Language />
+        </div>
       </div>
     </div>
   )

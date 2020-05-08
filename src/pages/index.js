@@ -70,6 +70,9 @@ const IndexPage = () => {
                 message={intl.formatMessage({
                   id: "home.sidebar.message",
                 })}
+                caption={intl.formatMessage({
+                  id: "home.sidebar.caption",
+                })}
               />
             </div>
           </div>

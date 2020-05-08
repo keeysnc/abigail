@@ -12,28 +12,28 @@ const CardRender = props => {
     query {
       servicesHero: file(relativePath: { eq: "service-hero.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       driversEdHero: file(relativePath: { eq: "driver-improvement-hero.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       registrationHero: file(relativePath: { eq: "registration-hero.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       trainingHero: file(relativePath: { eq: "training-hero.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
