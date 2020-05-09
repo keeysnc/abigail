@@ -52,7 +52,7 @@ export default props => (
         <label htmlFor="parent-name">Parent Name / Nombre de los padres</label>
       </div>
       <div>
-        <input type="text" name="email" id="email" />
+        <input required type="email" name="email" id="email" />
         <label htmlFor="email">email</label>
       </div>
     </div>
