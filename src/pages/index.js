@@ -23,7 +23,7 @@ const IndexPage = () => {
       }
       homeEs: markdownRemark(fileAbsolutePath: { regex: "/hogar/" }) {
         frontmatter {
-          title
+          title_es
         }
         id
         html

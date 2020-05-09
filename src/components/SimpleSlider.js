@@ -14,7 +14,7 @@ const SimpleSlider = props => {
     interval: 6000,
   }
   return (
-    <div class="slider-render section">
+    <div class="slider-render">
       <h3>{props.title}</h3>
       <a
         href="https://www.google.com/search?q=google+abigails+driving+school&oq=google+abigails+driving+school&aqs=chrome..69i57j69i64j69i60.4710j0j4&sourceid=chrome&ie=UTF-8#lrd=0x89b116c99d0dc009:0xf22a5fe2a8ee0f76,1,,,"
