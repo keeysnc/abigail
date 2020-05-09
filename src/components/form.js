@@ -1,7 +1,10 @@
 import React from "react"
 
+import "./form.css"
+
 export default props => (
   <form
+    className="contact-form"
     name="contact"
     method="post"
     action="/success"
@@ -215,13 +218,13 @@ export default props => (
         </select>
         <label htmlFor="payment">Payment / Pago</label>
       </div>
-      <div className="section">
-        <h3>{props.termsTitle}</h3>
-        <div dangerouslySetInnerHTML={{ __html: props.agreement }} />
-      </div>
       <div>
+        <label htmlFor="signature">
+          <h3>{props.termsTitle}</h3>
+          <div dangerouslySetInnerHTML={{ __html: props.agreement }} />
+        </label>
         <input type="text" name="signature" id="signature" required />
-        <label htmlFor="signature">Signature / Firma</label>
+        <p>Signature / Firma</p>
       </div>
       <div>
         <input type="date" name="date" id="date" required />

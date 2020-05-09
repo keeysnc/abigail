@@ -1,6 +1,6 @@
 import { Link } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { useIntl } from "gatsby-plugin-intl"
 import Language from "./language"
@@ -24,6 +24,7 @@ const Header = ({ siteTitle, props }) => {
     }
   `)
   const [open, setOpen] = useState(false)
+
   return (
     <>
       <header className="container">

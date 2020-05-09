@@ -61,7 +61,7 @@ const IndexPage = () => {
               })}
             />
           </div>
-          <div class="col l5 m12 s12">
+          <div className="col l5 m12 s12">
             <div className="cta-sidebar">
               <SideBar
                 title={intl.formatMessage({
