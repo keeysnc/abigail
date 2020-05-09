@@ -52,7 +52,7 @@ const IndexPage = () => {
           <div class="col s12 m12 l5">
             <Paragraph
               title={intl.formatMessage({ id: "home.pagetitle" })}
-              message={path.match("/en/") ? data.home.html : data.homeEs.html}
+              message={path.match("/en/") ? data.homeEs.html : data.homeEs.html}
             />
             <Image visual={data.accreditedLogo.childImageSharp.fixed} />
             <SimpleSlider
